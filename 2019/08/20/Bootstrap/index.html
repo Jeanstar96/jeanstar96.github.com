@@ -6,18 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/8 | Jean_Blog</title>
+  <title>Bootstrap | Jean_Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这里是一枚前端开发学习者">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jean_Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/08/index.html">
+  <meta name="description" content="Use Responsive Design with Bootstrap Fluid Containers">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bootstrap">
+<meta property="og:url" content="http://yoursite.com/2019/08/20/Bootstrap/index.html">
 <meta property="og:site_name" content="Jean_Blog">
-<meta property="og:description" content="这里是一枚前端开发学习者">
+<meta property="og:description" content="Use Responsive Design with Bootstrap Fluid Containers">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2019/08/20/Bootstrap/Make.png">
+<meta property="og:image" content="http://yoursite.com/2019/08/20/Bootstrap/Make.png">
+<meta property="og:image" content="https://www.freecodecamp.cn/images/camper-image-placeholder.png">
+<meta property="og:image" content="https://www.freecodecamp.cn/images/camper-image-placeholder.png">
+<meta property="og:updated_time" content="2019-08-20T23:54:50.975Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jean_Blog">
-<meta name="twitter:description" content="这里是一枚前端开发学习者">
+<meta name="twitter:title" content="Bootstrap">
+<meta name="twitter:description" content="Use Responsive Design with Bootstrap Fluid Containers">
+<meta name="twitter:image" content="http://yoursite.com/2019/08/20/Bootstrap/Make.png">
   
     <link rel="alternative" href="/atom.xml" title="Jean_Blog" type="application/atom+xml">
   
@@ -162,172 +168,297 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Bootstrap" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Bootstrap
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+
+        
+        
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 
 <a href="/2019/08/20/Bootstrap/" class="archive-article-date">
   	<time datetime="2019-08-20T14:33:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-20</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/20/Bootstrap/">Bootstrap</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
+        
           
-          
+<div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">1.7k字</span>
+      </span>
+    </span>
 
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">6分</span>
+      </span>
+    </span>
+</div>
+
+          
+		
+		
+			<span class="archive-article-date">
+				阅读量 <span id="busuanzi_value_page_pv"></span>
+			</span>
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="Use-Responsive-Design-with-Bootstrap-Fluid-Containers"><a href="#Use-Responsive-Design-with-Bootstrap-Fluid-Containers" class="headerlink" title="Use Responsive Design with Bootstrap Fluid Containers"></a>Use Responsive Design with Bootstrap Fluid Containers</h4><hr>
+<a id="more"></a>
+
+<p>现在让我们回到我们的Cat Photo应用。这次，我们将用流行的响应式框架Bootstrap来美化它。</p>
+<p>Bootstrap将会根据你的屏幕的大小来调整HTML元素的大小 —— 强调 <code>响应式设计</code>的概念。</p>
+<p>通过响应式设计，你无需再为你的网站设计一个手机版的。它在任何尺寸的屏幕上看起来都会不错。</p>
+<p>你仅需要通过添加下列代码到你的HTML开头来将Bootstrap添加到任意应用中：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"//cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Make-Images-Mobile-Responsive"><a href="#Make-Images-Mobile-Responsive" class="headerlink" title="Make Images Mobile Responsive"></a>Make Images Mobile Responsive</h4><hr>
+<p>首先，在已有的图片下方添加一张新的图片。将它的 <code>src</code> 属性设置为 <code>/images/running-cat.jpg</code>。</p>
+<p>如果图片的尺寸刚好等于我们手机的尺寸，那想必是极好的。</p>
+<p>谢天谢地，通过Bootstrap，我们要做的只是给图片添加 <code>img-responsive</code> class属性。这样图片的宽度就能完美地适配你的页面的宽度了。</p>
+<p><img src="/2019/08/20/Bootstrap/Make.png" alt></p>
+<h4 id="Center-Text-with-Bootstrap"><a href="#Center-Text-with-Bootstrap" class="headerlink" title="Center Text with Bootstrap"></a>Center Text with Bootstrap</h4><hr>
+<p>既然我们在使用Bootstrap，我们可以通过居中头部元素来使它看起来更棒。 我们所要做的只是把<code>text-center</code>class属性添加给 <code>h2</code> 元素。</p>
+<p>记住：你可以用空格分开多个class来为同一个元素添加多个 class 属性， 就像这样：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">"red-text text-center"</span>&gt;</span>your text<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Create-a-Bootstrap-Button"><a href="#Create-a-Bootstrap-Button" class="headerlink" title="Create a Bootstrap Button"></a>Create a Bootstrap Button</h4><hr>
+<p>Bootstrap有它自己的 <code>button</code> 按钮风格， 看起来要比默认的按钮好看得多。</p>
+<p>在三只猫咪图片下面创建一个新的 <code>button</code> 元素。给它添加 <code>btn</code> class 属性以及”Like”文本。</p>
+<h4 id="Use-Responsive-Design-with-Bootstrap-Fluid-Containers-1"><a href="#Use-Responsive-Design-with-Bootstrap-Fluid-Containers-1" class="headerlink" title="Use Responsive Design with Bootstrap Fluid Containers"></a>Use Responsive Design with Bootstrap Fluid Containers</h4><hr>
+<p>现在让我们回到我们的Cat Photo应用。这次，我们将用流行的响应式框架Bootstrap来美化它。</p>
+<p>Bootstrap将会根据你的屏幕的大小来调整HTML元素的大小 —— 强调 <code>响应式设计</code>的概念。</p>
+<p>通过响应式设计，你无需再为你的网站设计一个手机版的。它在任何尺寸的屏幕上看起来都会不错。</p>
+<p>你仅需要通过添加下列代码到你的HTML开头来将Bootstrap添加到任意应用中：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"//cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Make-Images-Mobile-Responsive-1"><a href="#Make-Images-Mobile-Responsive-1" class="headerlink" title="Make Images Mobile Responsive"></a>Make Images Mobile Responsive</h4><hr>
+<p>首先，在已有的图片下方添加一张新的图片。将它的 <code>src</code> 属性设置为 <code>/images/running-cat.jpg</code>。</p>
+<p>如果图片的尺寸刚好等于我们手机的尺寸，那想必是极好的。</p>
+<p>谢天谢地，通过Bootstrap，我们要做的只是给图片添加 <code>img-responsive</code> class属性。这样图片的宽度就能完美地适配你的页面的宽度了。</p>
+<p><img src="/2019/08/20/Bootstrap/Make.png" alt></p>
+<h4 id="Center-Text-with-Bootstrap-1"><a href="#Center-Text-with-Bootstrap-1" class="headerlink" title="Center Text with Bootstrap"></a>Center Text with Bootstrap</h4><hr>
+<p>既然我们在使用Bootstrap，我们可以通过居中头部元素来使它看起来更棒。 我们所要做的只是把<code>text-center</code>class属性添加给 <code>h2</code> 元素。</p>
+<p>记住：你可以用空格分开多个class来为同一个元素添加多个 class 属性， 就像这样：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">"red-text text-center"</span>&gt;</span>your text<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Create-a-Bootstrap-Button-1"><a href="#Create-a-Bootstrap-Button-1" class="headerlink" title="Create a Bootstrap Button"></a>Create a Bootstrap Button</h4><hr>
+<p>Bootstrap有它自己的 <code>button</code> 按钮风格， 看起来要比默认的按钮好看得多。</p>
+<p>在三只猫咪图片下面创建一个新的 <code>button</code> 元素。给它添加 <code>btn</code> class 属性以及”Like”文本。</p>
+<h4 id="Create-a-Block-Element-Bootstrap-Button"><a href="#Create-a-Block-Element-Bootstrap-Button" class="headerlink" title="Create a Block Element Bootstrap Button"></a>Create a Block Element Bootstrap Button</h4><hr>
+<p>通常情况下，你的 <code>button</code> 元素仅与它所包含的文本一样宽。通过使其成为块级元素，你的按钮将会伸展并填满页面整个水平空间，任何在它之下的元素都会跟着浮动至该区块的下一行。</p>
+<p>这张图阐述了行内元素与块级元素的区别：</p>
+<p><a href="https://i.imgur.com/O32cDWE.png" target="_blank" rel="noopener"><img src="https://www.freecodecamp.cn/images/camper-image-placeholder.png" alt="An "></a></p>
+<p>注意，这些按钮仍然需要 <code>btn</code> class。</p>
+<p>添加Bootstrap的 <code>btn-block</code> class 到你的按钮。</p>
+<h4 id="Taste-the-Bootstrap-Button-Color-Rainbow"><a href="#Taste-the-Bootstrap-Button-Color-Rainbow" class="headerlink" title="Taste the Bootstrap Button Color Rainbow"></a>Taste the Bootstrap Button Color Rainbow</h4><hr>
+<p>深蓝色<code>btn-primary</code>是你的应用的主要颜色，被用在那些用户主要采取的操作上。</p>
+<p>添加Bootstrap的 <code>btn-primary</code> class 属性到按钮标签上。</p>
+<p>注意：这个按钮仍然需要 <code>btn</code> 和 <code>btn-block</code> 属性！</p>
+<h4 id="Call-out-Optional-Actions-with-Button-Info"><a href="#Call-out-Optional-Actions-with-Button-Info" class="headerlink" title="Call out Optional Actions with Button Info"></a>Call out Optional Actions with Button Info</h4><hr>
+<p>Bootstrap自带了一些预定义的按钮颜色。浅蓝色 <code>btn-info</code> 被用在那些用户可能会采取的操作上。</p>
+<p>在你的 “Like” 按钮下面添加一个文本为 “Info” 的块级Bootstrap按钮，并为其添加 <code>btn-info</code> 和 <code>btn-block</code>class属性。</p>
+<p>注意：这些按钮仍然需要 <code>btn</code> 和 <code>btn-block</code> class属性</p>
+<h4 id="Warn-your-Users-of-a-Dangerous-Action"><a href="#Warn-your-Users-of-a-Dangerous-Action" class="headerlink" title="Warn your Users of a Dangerous Action"></a>Warn your Users of a Dangerous Action</h4><hr>
+<p>Bootstrap自带了一些预定义的按钮颜色。红色<code>btn-danger</code>被用来提醒用户该操作具有“破坏性”，例如删除一张猫的图片。</p>
+<p>创建一个文本为 “Delete” 的按钮，并且给它添加 class <code>btn-danger</code>。</p>
+<p>注意：这些标签仍然需要 <code>btn</code> 与 <code>btn-block</code> class。</p>
+<h4 id="重要！Use-the-Bootstrap-Grid-to-Put-Elements-Side-By-Side"><a href="#重要！Use-the-Bootstrap-Grid-to-Put-Elements-Side-By-Side" class="headerlink" title="重要！Use the Bootstrap Grid to Put Elements Side By Side"></a>重要！Use the Bootstrap Grid to Put Elements Side By Side</h4><hr>
+<p>Bootstrap 使用一种响应式网格布局——可轻松实现将多个元素放入一行并指定各个元素的相对宽度的需求。Bootstrap 中大多数的class属性都可以设置于 <code>div</code> 元素中。</p>
+<p>下面这张图表显示了 Bootstraps 的12列网格布局是如何起作用的：</p>
+<p><a href="https://i.imgur.com/FaYuui8.png" target="_blank" rel="noopener"><img src="https://www.freecodecamp.cn/images/camper-image-placeholder.png" alt="an image illustrating Bootstrap&#39;s grid system"></a></p>
+<p>请注意，在这张图表中，class属性 <code>col-md-*</code> 正被使用。在这里，<code>md</code> 表示 medium (中等的)，<code>*</code> 代表一个数字，它指定了这个元素所占的列宽。通过此图表的属性设置可知，在中等大小的屏幕上(例如笔记本电脑)，元素的列宽被指定了。</p>
+<p>在我们创建的 Cat Photo App 中，将会使用 <code>col-xs-*</code> ，其中 <code>xs</code> 是 extra small 缩写（应用于较小的屏幕，比如手机屏幕），<code>*</code> 是你需要填写的数字，代表在一行中,各个元素应该占的列宽。</p>
+<p>把 <code>Like</code>, <code>Info</code> 和 <code>Delete</code> 三个按钮一并放入一个 <code>&lt;div class=&quot;row&quot;&gt;</code> 元素中；然后，其中的每一个按钮都需要各自被一个 <code>&lt;div class=&quot;col-xs-4&quot;&gt;</code> 元素包裹。</p>
+<p>当<code>div</code> 元素设置了 class 属性 <code>row</code> 之后，那几个按钮便可嵌入其中。</p>
+<h4 id="Ditch-Custom-CSS-for-Bootstrap"><a href="#Ditch-Custom-CSS-for-Bootstrap" class="headerlink" title="Ditch Custom CSS for Bootstrap"></a>Ditch Custom CSS for Bootstrap</h4><hr>
+<p>现在，让我们清理一下之前的代码了，以让我们的 Cat Photo 应用看起来更简洁，用 Bootstrap 内置的样式来替换我们之前自定义的样式。</p>
+<p>别担心 —— 以后我们会有大把时间来自定义我们的 CSS 样式的 ：）</p>
+<p>删除 <code>style</code> 元素里的 <code>.red-text</code>, <code>p</code> 和 <code>.smaller-image</code>CSS声明，这样你的 <code>style</code> 留下的声明就只有 <code>h2</code> 和 <code>thick-green-border</code>。</p>
+<p>然后删除包含死链接的 <code>p</code> 元素。 移除 <code>h2</code> 元素的 <code>red-text</code> class 并且用 Bootstrap的 <code>text-primary</code> class替换之。</p>
+<p>最后，移除第一个 <code>img</code> 元素的 “smaller -image” class ，替换为 Bootstrap的 <code>img-responsive</code> class。</p>
+
+      
+
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃零食啦<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/20/Bootstrap/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
 
-<a href="/2019/08/20/HTML基础/" class="archive-article-date">
-  	<time datetime="2019-08-20T10:46:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-20</time>
-</a>
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/08/20/HTML基础/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTML基础</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/20/HTML基础/">HTML基础</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">freeCodeCamp</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Use-Responsive-Design-with-Bootstrap-Fluid-Containers"><span class="toc-number">1.</span> <span class="toc-text">Use Responsive Design with Bootstrap Fluid Containers</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Make-Images-Mobile-Responsive"><span class="toc-number">2.</span> <span class="toc-text">Make Images Mobile Responsive</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Center-Text-with-Bootstrap"><span class="toc-number">3.</span> <span class="toc-text">Center Text with Bootstrap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-Bootstrap-Button"><span class="toc-number">4.</span> <span class="toc-text">Create a Bootstrap Button</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Use-Responsive-Design-with-Bootstrap-Fluid-Containers-1"><span class="toc-number">5.</span> <span class="toc-text">Use Responsive Design with Bootstrap Fluid Containers</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Make-Images-Mobile-Responsive-1"><span class="toc-number">6.</span> <span class="toc-text">Make Images Mobile Responsive</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Center-Text-with-Bootstrap-1"><span class="toc-number">7.</span> <span class="toc-text">Center Text with Bootstrap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-Bootstrap-Button-1"><span class="toc-number">8.</span> <span class="toc-text">Create a Bootstrap Button</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-Block-Element-Bootstrap-Button"><span class="toc-number">9.</span> <span class="toc-text">Create a Block Element Bootstrap Button</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Taste-the-Bootstrap-Button-Color-Rainbow"><span class="toc-number">10.</span> <span class="toc-text">Taste the Bootstrap Button Color Rainbow</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Call-out-Optional-Actions-with-Button-Info"><span class="toc-number">11.</span> <span class="toc-text">Call out Optional Actions with Button Info</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Warn-your-Users-of-a-Dangerous-Action"><span class="toc-number">12.</span> <span class="toc-text">Warn your Users of a Dangerous Action</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#重要！Use-the-Bootstrap-Grid-to-Put-Elements-Side-By-Side"><span class="toc-number">13.</span> <span class="toc-text">重要！Use the Bootstrap Grid to Put Elements Side By Side</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Ditch-Custom-CSS-for-Bootstrap"><span class="toc-number">14.</span> <span class="toc-text">Ditch Custom CSS for Bootstrap</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+        
+    </div>
+</aside>
 
-<a href="/2019/08/18/搭建博客/" class="archive-article-date">
-  	<time datetime="2019-08-18T08:04:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-18</time>
-</a>
-        </div>
-    	 
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/18/搭建博客/">搭建博客</a>
-    </h1>
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "http://yoursite.com/2019/08/20/Bootstrap/", 
+    sourceId: "Bootstrap",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">githubpage</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-<a href="/2019/08/15/hello-world/" class="archive-article-date">
-  	<time datetime="2019-08-15T06:24:44.748Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/15/hello-world/">Blog搭建过程</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+
+
 
 
           </div>
@@ -357,8 +488,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
