@@ -8,21 +8,24 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Bootstrap | Jean_Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Use Responsive Design with Bootstrap Fluid Containers">
+  <meta name="description" content="Use Responsive Design with Bootstrap Fluid Containers 现在让我们回到我们的Cat Photo应用。这次，我们将用流行的响应式框架Bootstrap来美化它。 Bootstrap将会根据你的屏幕的大小来调整HTML元素的大小 —— 强调 响应式设计的概念。">
+<meta name="keywords" content="bootstrap,基础,语法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Bootstrap">
 <meta property="og:url" content="http://yoursite.com/2019/08/20/Bootstrap/index.html">
 <meta property="og:site_name" content="Jean_Blog">
-<meta property="og:description" content="Use Responsive Design with Bootstrap Fluid Containers">
+<meta property="og:description" content="Use Responsive Design with Bootstrap Fluid Containers 现在让我们回到我们的Cat Photo应用。这次，我们将用流行的响应式框架Bootstrap来美化它。 Bootstrap将会根据你的屏幕的大小来调整HTML元素的大小 —— 强调 响应式设计的概念。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/08/20/Bootstrap/Make.png">
 <meta property="og:image" content="http://yoursite.com/2019/08/20/Bootstrap/Make.png">
 <meta property="og:image" content="https://www.freecodecamp.cn/images/camper-image-placeholder.png">
 <meta property="og:image" content="https://www.freecodecamp.cn/images/camper-image-placeholder.png">
-<meta property="og:updated_time" content="2019-08-20T23:54:50.975Z">
+<meta property="og:image" content="https://i.imgur.com/O32cDWE.png">
+<meta property="og:image" content="https://www.freecodecamp.cn/images/camper-image-placeholder.png">
+<meta property="og:updated_time" content="2019-08-21T01:19:46.660Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bootstrap">
-<meta name="twitter:description" content="Use Responsive Design with Bootstrap Fluid Containers">
+<meta name="twitter:description" content="Use Responsive Design with Bootstrap Fluid Containers 现在让我们回到我们的Cat Photo应用。这次，我们将用流行的响应式框架Bootstrap来美化它。 Bootstrap将会根据你的屏幕的大小来调整HTML元素的大小 —— 强调 响应式设计的概念。">
 <meta name="twitter:image" content="http://yoursite.com/2019/08/20/Bootstrap/Make.png">
   
     <link rel="alternative" href="/atom.xml" title="Jean_Blog" type="application/atom+xml">
@@ -197,7 +200,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1.7k字</span>
+        <span class="post-count">3.1k字</span>
       </span>
     </span>
 
@@ -206,7 +209,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">6分</span>
+        <span class="post-count">11分</span>
       </span>
     </span>
 </div>
@@ -224,10 +227,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h4 id="Use-Responsive-Design-with-Bootstrap-Fluid-Containers"><a href="#Use-Responsive-Design-with-Bootstrap-Fluid-Containers" class="headerlink" title="Use Responsive Design with Bootstrap Fluid Containers"></a>Use Responsive Design with Bootstrap Fluid Containers</h4><hr>
-<a id="more"></a>
-
 <p>现在让我们回到我们的Cat Photo应用。这次，我们将用流行的响应式框架Bootstrap来美化它。</p>
 <p>Bootstrap将会根据你的屏幕的大小来调整HTML元素的大小 —— 强调 <code>响应式设计</code>的概念。</p>
+<a id="more"></a>
+
 <p>通过响应式设计，你无需再为你的网站设计一个手机版的。它在任何尺寸的屏幕上看起来都会不错。</p>
 <p>你仅需要通过添加下列代码到你的HTML开头来将Bootstrap添加到任意应用中：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"//cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
@@ -297,6 +300,51 @@
 <p>删除 <code>style</code> 元素里的 <code>.red-text</code>, <code>p</code> 和 <code>.smaller-image</code>CSS声明，这样你的 <code>style</code> 留下的声明就只有 <code>h2</code> 和 <code>thick-green-border</code>。</p>
 <p>然后删除包含死链接的 <code>p</code> 元素。 移除 <code>h2</code> 元素的 <code>red-text</code> class 并且用 Bootstrap的 <code>text-primary</code> class替换之。</p>
 <p>最后，移除第一个 <code>img</code> 元素的 “smaller -image” class ，替换为 Bootstrap的 <code>img-responsive</code> class。</p>
+<h4 id="Use-Spans-for-Inline-Elements"><a href="#Use-Spans-for-Inline-Elements" class="headerlink" title="Use Spans for Inline Elements"></a>Use Spans for Inline Elements</h4><hr>
+<p>你可以用 span 标签来创建行内元素。还记得我们是怎样使用 <code>.btn-block</code>来创建填满整行的按钮吗？</p>
+<p>这张图展示了 <code>inline</code> 元素与 <code>block-level</code> 块级元素的区别：</p>
+<p><a href="https://i.imgur.com/O32cDWE.png" target="_blank" rel="noopener"><img src="https://i.imgur.com/O32cDWE.png" alt="An "></a></p>
+<p>通过使用 <code>span</code> 元素，你可以把几个元素放在一起。你甚至可以用此为一个元素的不同部分指定样式。</p>
+<p>把 “Things cats love” 中的 “love” 放到 <code>span</code> 标签下。然后为其添加 <code>text-danger</code> class 来使文字变成红色。</p>
+<p>举例，”Top 3 things cats <code>hate</code>“ 元素的写法如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Top 3 things cats <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span> = <span class="string">"text-danger"</span>&gt;</span>hate:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Create-a-Custom-Heading"><a href="#Create-a-Custom-Heading" class="headerlink" title="Create a Custom Heading"></a>Create a Custom Heading</h4><hr>
+<p>让我们来为Cat Photo 应用做一个导航吧，把标题和惬意的猫图片放在同一行。</p>
+<p>记住，Bootstrap使用响应式栅格系统，这使得把元素放入行内并为每个元素指定宽度变得很容易。大部分的 Bootstrap的 class 都可以被用在 <code>div</code> 元素上。</p>
+<p>这张图展示了 Bootstrap 的12栏栅格布局是如何工作的：</p>
+<p><a href="https://i.imgur.com/FaYuui8.png" target="_blank" rel="noopener"><img src="https://www.freecodecamp.cn/images/camper-image-placeholder.png" alt="an image illustrating Bootstrap&#39;s grid system"></a></p>
+<p>注意，在此图示中，我们使用了 <code>col-md-*</code> class 。此处 <code>md</code> 代表中等，<code>*</code> 指定了元素宽度应该占用的栏数。 在这个案例中，我们指定了元素在中等大小的屏幕（如笔记本等）上所占用的栏数。</p>
+<p>在此应用中，我们将使用 <code>col-xs-*</code>， <code>xs</code> 意味着非常小（比如非常小的手机屏幕）， <code>*</code> 指定了元素宽度应该占用的栏数。</p>
+<p>将你的第一张图片和 <code>h2</code> 元素放到同一个 <code>&lt;div class=&quot;row&quot;&gt;</code> 元素下。 将你的 <code>h2</code> 元素放到 <code>&lt;div class=&quot;col-xs-8&quot;&gt;</code> 下，你的图片放到 <code>&lt;div class=&quot;col-xs-4&quot;&gt;</code> 下，这样他们就能位于同一行了。</p>
+<p>注意现在图片是否与文字大小一致呢？一致</p>
+<h4 id="Add-Font-Awesome-Icons-to-our-Buttons"><a href="#Add-Font-Awesome-Icons-to-our-Buttons" class="headerlink" title="Add Font Awesome Icons to our Buttons"></a>Add Font Awesome Icons to our Buttons</h4><hr>
+<p>Font Awesome 是一个非常方便的图标库。这些图标都是矢量图形，被保存在 <code>.svg</code> 的文件格式中。这些图标就和字体一样，你可以通过像素单位指定它们的大小，它们将会继承其父HTML元素的字体大小。</p>
+<p>你可以将 Font Awesome 图标库增添至任何一个应用中，方法很简单，只需要在你的 HTML 头部增加下列代码即可：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>不过，我们已经事先在幕后为此页面添加了该功能。（不必重复添加上面这段代码）</p>
+<p><code>i</code> 元素起初一般是让其它元素有斜体(italic)的功能，不过现在一般用来指代图标。你可以将 Font Awesome 中的 class 属性添加到 <code>i</code> 元素中，把它变成一个图标，比如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-info-circle"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>你可以通过 Font Awesome 库增加一个 <code>thumbs-up</code>图标到你的 like 按钮中，方法是在<code>i</code> 元素中增加 class 属性 <code>fa</code> 和 <code>fa-thumbs-up</code>。</p>
+<h4 id="Add-Font-Awesome-Icons-to-all-of-our-Buttons"><a href="#Add-Font-Awesome-Icons-to-all-of-our-Buttons" class="headerlink" title="Add Font Awesome Icons to all of our Buttons"></a>Add Font Awesome Icons to all of our Buttons</h4><hr>
+<p>Font Awesome 是一个非常方便的图标库。这些图片都是矢量图，以 <code>.svg</code> 文件格式保存。这些图标用起来就像字体一样。你可以使用像素单位来指定他们的大小，它们会继承父级HTML元素的字体大小。</p>
+<p>使用 Font Awesome 分别为你的 info 按钮添加 <code>info-circle</code> 图标，为你的 delete 按钮添加 <code>trash</code> 图标。</p>
+<h4 id="Responsively-Style-Radio-Buttons"><a href="#Responsively-Style-Radio-Buttons" class="headerlink" title="Responsively Style Radio Buttons"></a>Responsively Style Radio Buttons</h4><hr>
+<p>你还可以将 Bootstrap 的 <code>col-xs-*</code>用在 <code>form</code> 元素中。这样的话，我们的单选按钮就可以均匀地在页面上展开，不需要知道屏幕的分辨率有多宽。</p>
+<p>将页面中的两个单选按钮放置于一个 <code>&lt;div class=&quot;row&quot;&gt;</code>元素中。然后，添加 <code>&lt;div class=&quot;col-xs-6&quot;&gt;</code> 元素并分别包裹每一个单选按钮。</p>
+<h4 id="Responsively-Style-Checkboxes"><a href="#Responsively-Style-Checkboxes" class="headerlink" title="Responsively Style Checkboxes"></a>Responsively Style Checkboxes</h4><hr>
+<p>你还可以将 Bootstrap 的 <code>col-xs-*</code>用在 <code>form</code> 元素中。这样我们的复选框就可以均匀地在页面上展开了，不管屏幕的分辨率是多大。</p>
+<p>将你所有的复选框都放置于一个 <code>&lt;div class=&quot;row&quot;&gt;</code> 元素中。然后分别把每个按钮都放置于一个 <code>&lt;div class=&quot;col-xs-4&quot;&gt;</code> 元素中。</p>
+<h4 id="Style-Text-Inputs-as-Form-Controls"><a href="#Style-Text-Inputs-as-Form-Controls" class="headerlink" title="Style Text Inputs as Form Controls"></a>Style Text Inputs as Form Controls</h4><hr>
+<p>你可以在你的 <code>button</code> 提交按钮上添加 Font Awesome的 <code>fa-paper-plane</code> 图标，方法是在元素中增加 <code>&lt;i class=&quot;fa fa-paper-plane&quot;&gt;&lt;/i&gt;</code> 。</p>
+<p>给你表单的文本输入框增加 class<code>form-control</code> 。在你的表单提交按钮中增加 class <code>btn btn-primary</code> 。同样，在这个提交按钮中增加 Font Awesome 的 <code>fa-paper-plane</code> 图标。</p>
+<h4 id="Line-up-Form-Elements-Responsively-with-Bootstrap"><a href="#Line-up-Form-Elements-Responsively-with-Bootstrap" class="headerlink" title="Line up Form Elements Responsively with Bootstrap"></a>Line up Form Elements Responsively with Bootstrap</h4><hr>
+<p>现在让我们把 <code>input</code> 元素和提交按钮 <code>button</code> 放到同一行。我们将用和之前一样的方法：通过使用拥有 <code>row</code>class 属性的 <code>div</code> 元素和其它在它之内的具有 <code>col-xs-*</code> class 属性的 <code>div</code> 元素。</p>
+<p>将你的表单中的 <code>input</code> 文本框和提交按钮 <code>button</code> 放到一个具有 <code>row</code> class 属性的 <code>div</code> 元素中。 将你的 <code>input</code> 放置于 class 为 <code>col-xs-7</code> 的 <code>div</code>元素中。 将你的表单的提交按钮 <code>button</code> 放置于 class 属性为 <code>col-xs-5</code> 的 <code>div</code> 元素中。</p>
+<p>这是目前为止我们的 Cat Photo 应用的最后一个挑战了。希望你能够喜欢学习 Font Awesome，Bootstrap和响应式设计！</p>
+<hr>
 
       
 
@@ -332,6 +380,25 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">bootstrap</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -396,6 +463,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2019/08/21/html-css-bootstrap/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          html+css+bootstrap
+        
+      </div>
+    </a>
+  
   
     <a href="/2019/08/20/HTML基础/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">HTML基础</div>
@@ -425,7 +501,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Use-Responsive-Design-with-Bootstrap-Fluid-Containers"><span class="toc-number">1.</span> <span class="toc-text">Use Responsive Design with Bootstrap Fluid Containers</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Make-Images-Mobile-Responsive"><span class="toc-number">2.</span> <span class="toc-text">Make Images Mobile Responsive</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Center-Text-with-Bootstrap"><span class="toc-number">3.</span> <span class="toc-text">Center Text with Bootstrap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-Bootstrap-Button"><span class="toc-number">4.</span> <span class="toc-text">Create a Bootstrap Button</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Use-Responsive-Design-with-Bootstrap-Fluid-Containers-1"><span class="toc-number">5.</span> <span class="toc-text">Use Responsive Design with Bootstrap Fluid Containers</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Make-Images-Mobile-Responsive-1"><span class="toc-number">6.</span> <span class="toc-text">Make Images Mobile Responsive</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Center-Text-with-Bootstrap-1"><span class="toc-number">7.</span> <span class="toc-text">Center Text with Bootstrap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-Bootstrap-Button-1"><span class="toc-number">8.</span> <span class="toc-text">Create a Bootstrap Button</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-Block-Element-Bootstrap-Button"><span class="toc-number">9.</span> <span class="toc-text">Create a Block Element Bootstrap Button</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Taste-the-Bootstrap-Button-Color-Rainbow"><span class="toc-number">10.</span> <span class="toc-text">Taste the Bootstrap Button Color Rainbow</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Call-out-Optional-Actions-with-Button-Info"><span class="toc-number">11.</span> <span class="toc-text">Call out Optional Actions with Button Info</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Warn-your-Users-of-a-Dangerous-Action"><span class="toc-number">12.</span> <span class="toc-text">Warn your Users of a Dangerous Action</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#重要！Use-the-Bootstrap-Grid-to-Put-Elements-Side-By-Side"><span class="toc-number">13.</span> <span class="toc-text">重要！Use the Bootstrap Grid to Put Elements Side By Side</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Ditch-Custom-CSS-for-Bootstrap"><span class="toc-number">14.</span> <span class="toc-text">Ditch Custom CSS for Bootstrap</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Use-Responsive-Design-with-Bootstrap-Fluid-Containers"><span class="toc-number">1.</span> <span class="toc-text">Use Responsive Design with Bootstrap Fluid Containers</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Make-Images-Mobile-Responsive"><span class="toc-number">2.</span> <span class="toc-text">Make Images Mobile Responsive</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Center-Text-with-Bootstrap"><span class="toc-number">3.</span> <span class="toc-text">Center Text with Bootstrap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-Bootstrap-Button"><span class="toc-number">4.</span> <span class="toc-text">Create a Bootstrap Button</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Use-Responsive-Design-with-Bootstrap-Fluid-Containers-1"><span class="toc-number">5.</span> <span class="toc-text">Use Responsive Design with Bootstrap Fluid Containers</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Make-Images-Mobile-Responsive-1"><span class="toc-number">6.</span> <span class="toc-text">Make Images Mobile Responsive</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Center-Text-with-Bootstrap-1"><span class="toc-number">7.</span> <span class="toc-text">Center Text with Bootstrap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-Bootstrap-Button-1"><span class="toc-number">8.</span> <span class="toc-text">Create a Bootstrap Button</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-Block-Element-Bootstrap-Button"><span class="toc-number">9.</span> <span class="toc-text">Create a Block Element Bootstrap Button</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Taste-the-Bootstrap-Button-Color-Rainbow"><span class="toc-number">10.</span> <span class="toc-text">Taste the Bootstrap Button Color Rainbow</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Call-out-Optional-Actions-with-Button-Info"><span class="toc-number">11.</span> <span class="toc-text">Call out Optional Actions with Button Info</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Warn-your-Users-of-a-Dangerous-Action"><span class="toc-number">12.</span> <span class="toc-text">Warn your Users of a Dangerous Action</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#重要！Use-the-Bootstrap-Grid-to-Put-Elements-Side-By-Side"><span class="toc-number">13.</span> <span class="toc-text">重要！Use the Bootstrap Grid to Put Elements Side By Side</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Ditch-Custom-CSS-for-Bootstrap"><span class="toc-number">14.</span> <span class="toc-text">Ditch Custom CSS for Bootstrap</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Use-Spans-for-Inline-Elements"><span class="toc-number">15.</span> <span class="toc-text">Use Spans for Inline Elements</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Create-a-Custom-Heading"><span class="toc-number">16.</span> <span class="toc-text">Create a Custom Heading</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Add-Font-Awesome-Icons-to-our-Buttons"><span class="toc-number">17.</span> <span class="toc-text">Add Font Awesome Icons to our Buttons</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Add-Font-Awesome-Icons-to-all-of-our-Buttons"><span class="toc-number">18.</span> <span class="toc-text">Add Font Awesome Icons to all of our Buttons</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Responsively-Style-Radio-Buttons"><span class="toc-number">19.</span> <span class="toc-text">Responsively Style Radio Buttons</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Responsively-Style-Checkboxes"><span class="toc-number">20.</span> <span class="toc-text">Responsively Style Checkboxes</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Style-Text-Inputs-as-Form-Controls"><span class="toc-number">21.</span> <span class="toc-text">Style Text Inputs as Form Controls</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Line-up-Form-Elements-Responsively-with-Bootstrap"><span class="toc-number">22.</span> <span class="toc-text">Line up Form Elements Responsively with Bootstrap</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -558,6 +634,26 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">bootstrap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">语法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
@@ -567,10 +663,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">HTML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">语法</a>
               </li>
              
               <li class="article-tag-list-item">
