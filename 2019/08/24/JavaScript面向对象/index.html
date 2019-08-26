@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 基础 | Jean_Blog</title>
+  <title>JavaScript面向对象 | Jean_Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这里是一枚前端开发学习者">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jean_Blog">
-<meta property="og:url" content="http://yoursite.com/tags/基础/index.html">
+  <meta name="description" content="Make Object Properties Private 对象拥有自己的特征，称为 属性，对象还有自己的函数，称为 方法 。 在前面的课程（构造函数）中，我们使用了 this 指向当前（将要被创建的）对象中的 公有属性 。 我们也可以创建 私有属性 和 私有方法 ，它们两个在对象外部是不可访问的。 为了完成这个任务，我们在 构造函数 中，使用我们熟悉的 var 关键字去创建变量，来替代我们使用">
+<meta name="keywords" content="javascript,面向对象，数组，字符串">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript面向对象">
+<meta property="og:url" content="http://yoursite.com/2019/08/24/JavaScript面向对象/index.html">
 <meta property="og:site_name" content="Jean_Blog">
-<meta property="og:description" content="这里是一枚前端开发学习者">
+<meta property="og:description" content="Make Object Properties Private 对象拥有自己的特征，称为 属性，对象还有自己的函数，称为 方法 。 在前面的课程（构造函数）中，我们使用了 this 指向当前（将要被创建的）对象中的 公有属性 。 我们也可以创建 私有属性 和 私有方法 ，它们两个在对象外部是不可访问的。 为了完成这个任务，我们在 构造函数 中，使用我们熟悉的 var 关键字去创建变量，来替代我们使用">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-08-26T08:18:52.203Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jean_Blog">
-<meta name="twitter:description" content="这里是一枚前端开发学习者">
+<meta name="twitter:title" content="JavaScript面向对象">
+<meta name="twitter:description" content="Make Object Properties Private 对象拥有自己的特征，称为 属性，对象还有自己的函数，称为 方法 。 在前面的课程（构造函数）中，我们使用了 this 指向当前（将要被创建的）对象中的 公有属性 。 我们也可以创建 私有属性 和 私有方法 ，它们两个在对象外部是不可访问的。 为了完成这个任务，我们在 构造函数 中，使用我们熟悉的 var 关键字去创建变量，来替代我们使用">
   
     <link rel="alternative" href="/atom.xml" title="Jean_Blog" type="application/atom+xml">
   
@@ -162,178 +164,316 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-JavaScript面向对象" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JavaScript面向对象
+    </h1>
+  
+
+        
+        
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+
+<a href="/2019/08/24/JavaScript面向对象/" class="archive-article-date">
+  	<time datetime="2019-08-24T14:29:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-24</time>
+</a>
+        
+          
+<div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">1.4k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">5分</span>
+      </span>
+    </span>
+</div>
+
+          
+		
+		
+			<span class="archive-article-date">
+				阅读量 <span id="busuanzi_value_page_pv"></span>
+			</span>
+		
+      </header>
     
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="Make-Object-Properties-Private"><a href="#Make-Object-Properties-Private" class="headerlink" title="Make Object Properties Private"></a>Make Object Properties Private</h4><hr>
+<p>对象拥有自己的特征，称为 <code>属性</code>，对象还有自己的函数，称为 <code>方法</code> 。</p>
+<p>在前面的课程（构造函数）中，我们使用了 <code>this</code> 指向当前（将要被创建的）对象中的 <code>公有属性</code> 。</p>
+<p>我们也可以创建 <code>私有属性</code> 和 <code>私有方法</code> ，它们两个在对象外部是不可访问的。</p>
+<p>为了完成这个任务，我们在 <code>构造函数</code> 中，使用我们熟悉的 <code>var</code> 关键字去创建变量，来替代我们使用 <code>this</code>创建 <code>属性</code> 。</p>
+<a id="more"></a>
+
+<p>比如，我们想记录我们的car行驶的 <code>speed</code> ，但是我们希望外面的代码对 <code>speed</code> 的修改只能是加速或减速（而不是变成字符串、直接赋值成某个速度等其他操作），那么如何达到这类操作的目的呢？</p>
+<p>编辑器中的 <code>构造函数</code> 展示了如何实现这种控制模式。</p>
+<p>该你自己试试了！修改 <code>Bike</code> 的 <code>构造函数</code> ，使它有一个名为 <code>gear</code> 的 <code>私有属性</code> ，还有两个公有方法，叫做 <code>getGear</code> 和 <code>setGear</code> ，这两个方法用来获得和设置 <code>gear</code> 的值。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Car = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// this is a private variable</span></span><br><span class="line">  <span class="keyword">var</span> speed = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// these are public methods</span></span><br><span class="line">  <span class="keyword">this</span>.accelerate = <span class="function"><span class="keyword">function</span>(<span class="params">change</span>) </span>&#123;</span><br><span class="line">    speed += change;</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">this</span>.decelerate = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    speed -= <span class="number">5</span>;</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">this</span>.getSpeed = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> speed;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> Bike = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 只能在这一行下面写代码</span></span><br><span class="line">  <span class="keyword">var</span> gear = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">this</span>.getGear = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gear;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">this</span>.setGear = <span class="function"><span class="keyword">function</span>(<span class="params">setwe</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gear = setwe;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myCar = <span class="keyword">new</span> Car();</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myBike = <span class="keyword">new</span> Bike();</span><br></pre></td></tr></table></figure>
+
+<h4 id="Iterate-over-Arrays-with-map"><a href="#Iterate-over-Arrays-with-map" class="headerlink" title="Iterate over Arrays with map"></a>Iterate over Arrays with map</h4><hr>
+<p><code>map</code> 方法可以方便的迭代数组，例子：</p>
+<blockquote>
+<p>var timesFour = oldArray.map(function(val){<br>  return val * 4;<br>});</p>
+</blockquote>
+<p><code>map</code> 方法会迭代数组中的每一个元素，并根据回调函数来处理每一个元素，最后返回一个新数组。注意，这个方法不会改变原始数组。</p>
+<p>在我们的例子中，回调函数只有一个参数，即数组中元素的值 (<code>val</code> 参数) ，但其实，你的回调函数也可以支持多个参数，譬如：元素的索引<code>index</code>、原始数组<code>arr</code>。</p>
+<h4 id="Condense-arrays-with-reduce"><a href="#Condense-arrays-with-reduce" class="headerlink" title="Condense arrays with reduce"></a>Condense arrays with reduce</h4><hr>
+<p>数组方法 <code>reduce</code> 用来迭代一个数组，并且把它累积到一个值中。</p>
+<p>使用 <code>reduce</code> 方法时，你要传入一个回调函数，这个回调函数的参数是一个 <strong>累加器</strong> （比如例子中的 <code>previousVal</code>) 和当前值 (<code>currentVal</code>）。</p>
+<p><code>reduce</code> 方法有一个可选的第二参数，它可以被用来设置累加器的初始值。如果没有在这定义初始值，那么初始值将变成数组中的第一项，而 <code>currentVal</code> 将从数组的第二项开始。</p>
+<p>下面的例子使用了 <code>reduce</code> 来让数组中的所有值相减：</p>
+<blockquote>
+<p>var singleVal = array.reduce(function(previousVal, currentVal) {<br>  return previousVal - currentVal;<br>}, 0);</p>
+</blockquote>
+<h4 id="Filter-Arrays-with-filter"><a href="#Filter-Arrays-with-filter" class="headerlink" title="Filter Arrays with filter"></a>Filter Arrays with filter</h4><hr>
+<p><code>filter</code> 方法用来迭代一个数组，并且按给出的条件过滤出符合的元素。</p>
+<p><code>filter</code> 方法传入一个回调函数，这个回调函数会携带一个参数，参数为当前迭代的项（我们叫它 <code>val</code> ）。</p>
+<p>回调函数返回 <code>true</code> 的项会保留在数组中，返回 <code>false</code>的项会被过滤出数组。</p>
+<p>下面的代码示例展示了使用 <code>filter</code> 来移除数组中值等于5的项：</p>
+<p><strong>注意：</strong> 我们忽略了第二参数和第三参数，因为例子中我们只需要第一参数就够了。</p>
+<blockquote>
+<p>array = array.filter(function(val) {<br>  return val !== 5;<br>});</p>
+</blockquote>
+<h4 id="Sort-Arrays-with-sort"><a href="#Sort-Arrays-with-sort" class="headerlink" title="Sort Arrays with sort"></a>Sort Arrays with sort</h4><hr>
+<p>使用 <code>sort</code> 方法，你可以很容易的按字母顺序或数字顺序对数组中的元素进行排序。</p>
+<p>与我们之前用的数组方法仅仅返回一个新数组不同， <code>sort</code> 方法将改变原数组，返回被排序后的数组。</p>
+<p><code>sort</code> 可以把比较函数作为参数传入。比较函数有返回值，当 <code>a</code> 小于 <code>b</code>，返回一个负数；当 <code>a</code> 大于 <code>b</code> ，返回一个正数；相等时返回0。</p>
+<p>如果没有传入比较函数，它将把值全部转成字符串，并按照字母顺序进行排序。</p>
+<p>下面的例子将展示 <code>sort</code> 的使用，传入的比较函数把元素按照从小到大的顺序进行排列：</p>
+<blockquote>
+<p>var array = [1, 12, 21, 2];<br>array.sort(function(a, b) {<br>  return a - b;<br>});</p>
+</blockquote>
+<h4 id="Reverse-Arrays-with-reverse"><a href="#Reverse-Arrays-with-reverse" class="headerlink" title="Reverse Arrays with reverse"></a>Reverse Arrays with reverse</h4><hr>
+<p>你可以使用 <code>reverse</code> 方法来翻转数组。</p>
+<blockquote>
+<p>var myArray = [1, 2, 3];<br>myArray.reverse();</p>
+</blockquote>
+<p><em>结果myArray 变成了 [3, 2, 1]</em></p>
+<h4 id="Concatenate-Arrays-with-concat"><a href="#Concatenate-Arrays-with-concat" class="headerlink" title="Concatenate Arrays with concat"></a>Concatenate Arrays with concat</h4><hr>
+<p><code>concat</code> 方法可以用来把两个数组的内容合并到一个数组中。</p>
+<p><code>concat</code> 方法的参数应该是一个数组。参数中的数组会拼接在原数组的后面，并作为一个新数组返回。</p>
+<p>下面是一个拼接数组的例子，用<code>concat</code> 把 <code>otherArray</code>拼接在 <code>oldArray</code> 的后面：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">newArray = oldArray.concat(otherArray);</span><br></pre></td></tr></table></figure>
+
+<h4 id="Split-Strings-with-split"><a href="#Split-Strings-with-split" class="headerlink" title="Split Strings with split"></a>Split Strings with split</h4><hr>
+<p>你可以使用 <code>split</code> 方法按指定分隔符将字符串分割为数组。</p>
+<p>你要给 <code>split</code> 方法传递一个参数，这个参数将会作为一个分隔符。</p>
+<p>下面的例子展示了 <code>split</code> 方法的使用，按照 <code>s</code> 字母进行分割：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var array = string.split(&apos;s&apos;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="Join-Strings-with-join"><a href="#Join-Strings-with-join" class="headerlink" title="Join Strings with join"></a>Join Strings with join</h4><hr>
+<p>我们还可以使用 <code>join</code> 方法来把数组转换成字符串，里面的每一个元素可以用你指定的连接符来连接起来，这个连接符就是你要传入的参数。</p>
+<p>下面展示了使用 <code>join</code> 来将数组中的每一项放入字符串，并用 <code>and</code>进行连接：</p>
+<blockquote>
+<p>var veggies = [“Celery”, “Radish”, “Carrot”, “Potato”];<br>var salad = veggies.join(“ and “);<br>console.log(salad); // “Celery and Radish and Carrot and Potato” </p>
+</blockquote>
+
+      
+
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃零食啦<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-<a href="/2019/08/21/jQuery/" class="archive-article-date">
-  	<time datetime="2019-08-21T01:58:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/21/jQuery/">jQuery</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jQuery</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">freeCodeCamp</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">面向对象，数组，字符串</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/24/JavaScript面向对象/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
 
-<a href="/2019/08/21/html-css-bootstrap/" class="archive-article-date">
-  	<time datetime="2019-08-21T01:20:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-21</time>
-</a>
+  
+<nav id="article-nav">
+  
+    <a href="/2019/08/26/JavaScript知识点杂记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          JavaScript知识点杂记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/22/JavaScript基础知识/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript基础知识</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/21/html-css-bootstrap/">html+css+bootstrap</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">bootstrap</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Make-Object-Properties-Private"><span class="toc-number">1.</span> <span class="toc-text">Make Object Properties Private</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Iterate-over-Arrays-with-map"><span class="toc-number">2.</span> <span class="toc-text">Iterate over Arrays with map</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Condense-arrays-with-reduce"><span class="toc-number">3.</span> <span class="toc-text">Condense arrays with reduce</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Filter-Arrays-with-filter"><span class="toc-number">4.</span> <span class="toc-text">Filter Arrays with filter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Sort-Arrays-with-sort"><span class="toc-number">5.</span> <span class="toc-text">Sort Arrays with sort</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Reverse-Arrays-with-reverse"><span class="toc-number">6.</span> <span class="toc-text">Reverse Arrays with reverse</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Concatenate-Arrays-with-concat"><span class="toc-number">7.</span> <span class="toc-text">Concatenate Arrays with concat</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Split-Strings-with-split"><span class="toc-number">8.</span> <span class="toc-text">Split Strings with split</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Join-Strings-with-join"><span class="toc-number">9.</span> <span class="toc-text">Join Strings with join</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+        
+    </div>
+</aside>
 
-<a href="/2019/08/20/Bootstrap/" class="archive-article-date">
-  	<time datetime="2019-08-20T14:33:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-20</time>
-</a>
-        </div>
-    	 
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/20/Bootstrap/">Bootstrap</a>
-    </h1>
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "http://yoursite.com/2019/08/24/JavaScript面向对象/", 
+    sourceId: "JavaScript面向对象",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">bootstrap</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
+
+
+
 
 
           </div>
@@ -363,9 +503,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,

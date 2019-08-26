@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 基础 | Jean_Blog</title>
+  <title>JavaScript基础知识 | Jean_Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这里是一枚前端开发学习者">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jean_Blog">
-<meta property="og:url" content="http://yoursite.com/tags/基础/index.html">
+  <meta name="description" content="问题：表示字符串时用双引号还是单引号，赋值时两个似乎都可，但在往函数里传参数时好像有时候只能用单引号。？？ Declare JavaScript Variables 在计算机科学中, data(数据)就是一切，因为它对于计算机的意义重大。JavaScript提供七种不同的data types(数据类型)，它们是undefined（未定义）, null（空）, boolean（布尔型）, strin">
+<meta name="keywords" content="javascript,基础语法,相关问题记录,js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript基础知识">
+<meta property="og:url" content="http://yoursite.com/2019/08/22/JavaScript基础知识/index.html">
 <meta property="og:site_name" content="Jean_Blog">
-<meta property="og:description" content="这里是一枚前端开发学习者">
+<meta property="og:description" content="问题：表示字符串时用双引号还是单引号，赋值时两个似乎都可，但在往函数里传参数时好像有时候只能用单引号。？？ Declare JavaScript Variables 在计算机科学中, data(数据)就是一切，因为它对于计算机的意义重大。JavaScript提供七种不同的data types(数据类型)，它们是undefined（未定义）, null（空）, boolean（布尔型）, strin">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-08-26T08:18:40.919Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jean_Blog">
-<meta name="twitter:description" content="这里是一枚前端开发学习者">
+<meta name="twitter:title" content="JavaScript基础知识">
+<meta name="twitter:description" content="问题：表示字符串时用双引号还是单引号，赋值时两个似乎都可，但在往函数里传参数时好像有时候只能用单引号。？？ Declare JavaScript Variables 在计算机科学中, data(数据)就是一切，因为它对于计算机的意义重大。JavaScript提供七种不同的data types(数据类型)，它们是undefined（未定义）, null（空）, boolean（布尔型）, strin">
   
     <link rel="alternative" href="/atom.xml" title="Jean_Blog" type="application/atom+xml">
   
@@ -162,178 +164,444 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-JavaScript基础知识" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JavaScript基础知识
+    </h1>
+  
+
+        
+        
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+
+<a href="/2019/08/22/JavaScript基础知识/" class="archive-article-date">
+  	<time datetime="2019-08-22T10:08:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-22</time>
+</a>
+        
+          
+<div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">4.5k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">19分</span>
+      </span>
+    </span>
+</div>
+
+          
+		
+		
+			<span class="archive-article-date">
+				阅读量 <span id="busuanzi_value_page_pv"></span>
+			</span>
+		
+      </header>
     
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>问题：表示字符串时用双引号还是单引号，赋值时两个似乎都可，但在往函数里传参数时好像有时候只能用单引号。？？</p>
+<h4 id="Declare-JavaScript-Variables"><a href="#Declare-JavaScript-Variables" class="headerlink" title="Declare JavaScript Variables"></a>Declare JavaScript Variables</h4><hr>
+<p>在计算机科学中, <code>data</code>(数据)就是一切，因为它对于计算机的意义重大。JavaScript提供七种不同的data types(数据类型)，它们是<code>undefined</code>（未定义）, <code>null</code>（空）, <code>boolean</code>（布尔型）, <code>string</code>（字符串）, <code>symbol</code>(符号), <code>number</code>（数字）, and <code>object</code>（对象）。</p>
+<a id="more"></a>
+
+<p>举个例子, 计算机能够分辨不同的数字, 例如数字 <code>12</code>和 <code>strings</code>，<code>&quot;12&quot;</code>和<code>&quot;dog&quot;</code>, 或<code>&quot;123 cats&quot;</code>, 都是字母的集合。 计算机能够精确地操作数字， 但是对于字符串却无能为力。</p>
+<p><code>Variables</code>（变量）允许计算机以一种动态的形式来存储和操作数据，通过操作指向数据的指针而不是数据本身来避免了内存泄露，以上的七种数据类型都可以存储到一个变量（variable）中。</p>
+<p><code>Variables</code> 非常类似于你在数学中使用的x,y变量, 这意味着它们都是以一个简单命名的名字来代替我们赋值给它的数据。计算机中的<code>variables</code>（变量）与数学中的变量不同的是，计算机可以在不同的时间存储不同类型的变量。</p>
+<p>通过在变量的前面使用关键字<code>var</code>，我们告诉 JavaScript 来创建或者 declare（声明）一个变量,就像这样：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ourName;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码的意思是创建一个名为<code>ourName</code>的<code>variable</code>（变量），在JavaScript中我们使用分号来结束一段声明。</p>
+<p><code>Variable</code> （变量）的名字可以由数字、字母、<code>$</code> 或者 <code>_</code>组成，但是不能包含空格或者以数字为首。</p>
+<h4 id="Storing-Values-with-the-Equal-Operator"><a href="#Storing-Values-with-the-Equal-Operator" class="headerlink" title="Storing Values with the Equal Operator"></a>Storing Values with the Equal Operator</h4><hr>
+<p>在JavaScript中，你可以通过assignment(分配)操作符把一个值存储到变量中。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myVariable = 5;</span><br></pre></td></tr></table></figure>
+
+<p>把<code>Number</code>数字<code>5</code>赋给变量<code>myVariable</code>。</p>
+<p>赋值过程是从右到左进行的。所有 <code>=</code> 操作符右边的值都会被赋到左边的变量。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">myVar = 5;</span><br><span class="line">myNum = myVar;</span><br></pre></td></tr></table></figure>
+
+<p>数值 <code>5</code> 被赋给变量 <code>myVar</code> 中， 然后变量 <code>myVar</code> 又赋给变量 <code>myNum</code> ，这样子 <code>myNum</code> 变量中的值也是 <code>5</code> 了。</p>
+<h4 id="Initializing-Variables-with-the-Equal-Operator"><a href="#Initializing-Variables-with-the-Equal-Operator" class="headerlink" title="Initializing Variables with the Equal Operator"></a>Initializing Variables with the Equal Operator</h4><hr>
+<p>通常地我们会在initialize开始声明变量的时候就会给变量赋一个初始值。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar = <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+<p>创建一个名为 <code>myVar</code> 的变量并指定一个初始值 <code>0</code>。</p>
+<h4 id="Understanding-Uninitialized-Variables"><a href="#Understanding-Uninitialized-Variables" class="headerlink" title="Understanding Uninitialized Variables"></a>Understanding Uninitialized Variables</h4><hr>
+<p>当 JavaScript 中的变量被声明的时候，程序内部会给它一个初始值 <code>undefined</code>。当你对一个值为 <code>undefined</code>的变量进行运算操作的时候，算出来的结果将会是 <code>NaN</code>，<code>NaN</code> 的意思是 “Not a Number”。当你用一个没有 <code>定义</code> 的变量来做字符串连接操作的时候，它会如实的输出<code>&quot;undefined&quot;</code>。</p>
+<h4 id="Understanding-Case-Sensitivity-in-Variables"><a href="#Understanding-Case-Sensitivity-in-Variables" class="headerlink" title="Understanding Case Sensitivity in Variables"></a>Understanding Case Sensitivity in Variables</h4><hr>
+<p>在 JavaScript 中所有的变量都是大小写敏感的。这意味着你要区别对待大写字母和小写字母。</p>
+<p><code>MYVAR</code>与<code>MyVar</code>和<code>myvar</code> 是截然不同的变量。这就有可能导致多个截然不同的变量却有着有相似的名字。正是由于以上原因所以强烈地建议你, <em>不要</em> 使用这一特性。（以免给自己带来麻烦）</p>
+<h4 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h4><p>使用 驼峰命名法 来书写一个 Javascript 变量，在 驼峰命名法 中，变量名的第一个单词的首写字母小写，后面的单词的第一个字母大写。</p>
+<p><strong>举个栗子:</strong></p>
+<blockquote>
+<p>var someVariable;<br>var anotherVariableName;<br>var thisVariableNameIsTooLong;</p>
+</blockquote>
+<h4 id="Add-Two-Numbers-with-JavaScript"><a href="#Add-Two-Numbers-with-JavaScript" class="headerlink" title="Add Two Numbers with JavaScript"></a>Add Two Numbers with JavaScript</h4><hr>
+<p>现在让我们来尝试在JavaScript中做加法运算。</p>
+<p>JavaScript 中使用 <code>+</code> 号来让两个数字执行加法运算。</p>
+<p><strong>举例</strong></p>
+<blockquote>
+<p>myVar = 5 + 10; // 等于 15</p>
+</blockquote>
+<h4 id="Escaping-Literal-Quotes-in-Strings"><a href="#Escaping-Literal-Quotes-in-Strings" class="headerlink" title="Escaping Literal Quotes in Strings"></a>Escaping Literal Quotes in Strings</h4><hr>
+<p>当你定义一个字符串必须要用单引号或双引号来包裹它。那么当你需要在字符串中使用一个: <code>&quot;</code> 或者 <code>&#39;</code> 时该怎么办呢?</p>
+<p>在 JavaScript 中，你可以通过在引号前面使用 反斜杠 (<code>\</code>) 来转义引号。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> sampleStr = <span class="string">"Alan said, \"Peter is learning JavaScript\"."</span>;</span><br></pre></td></tr></table></figure>
+
+<p>这标志着提醒 JavaScript 单引号或双引号并不是字符串的结尾，而是出现在字符串内的字符。所以，如果你要打印字符串到控制台，你将得到：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Alan said, <span class="string">"Peter is learning JavaScript"</span>.</span><br></pre></td></tr></table></figure>
+
+<h4 id="Quoting-Strings-with-Single-Quotes"><a href="#Quoting-Strings-with-Single-Quotes" class="headerlink" title="Quoting Strings with Single Quotes"></a>Quoting Strings with Single Quotes</h4><hr>
+<p>在 JavaScript 中的 字符串 要用单引号或双引号来包裹它，只要你在开始和结束都使用相同类型的引号，单引号和双引号的功能在JavaScript中是相同的。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"This string has \"double quotes\" in it"</span></span><br></pre></td></tr></table></figure>
+
+<p>当我们需要在字符串中使用与开头结尾相同的引号时，我们需要对引号进行 转义 。如果你有很多双引号的字符串，使用转义字符可能导致难以阅读。这时候可以使用单引号。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'This string has "double quotes" in it. And "probably" lots of them.'</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="注意Counting-Cards"><a href="#注意Counting-Cards" class="headerlink" title="注意Counting Cards"></a>注意Counting Cards</h4><hr>
+<p>在赌场21点游戏中，玩家可以通过计算牌桌上已经发放的卡牌的高低值来让自己在游戏中保持优势，这就叫<a href="https://www.douban.com/note/273781969/" target="_blank" rel="noopener">21点算法</a>。</p>
+<p>根据下面的表格，每张卡牌都分配了一个值。如果卡牌的值大于0，那么玩家应该追加赌注。反之，追加少许赌注甚至不追加赌注。</p>
+<table>
+<thead>
+<tr>
+<th align="left">Count Change</th>
+<th align="left">Cards</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">+1</td>
+<td align="left">2, 3, 4, 5, 6</td>
+</tr>
+<tr>
+<td align="left">0</td>
+<td align="left">7, 8, 9</td>
+</tr>
+<tr>
+<td align="left">-1</td>
+<td align="left">10, ‘J’, ‘Q’, ‘K’,’A’</td>
+</tr>
+</tbody></table>
+<p>你需要写一个函数，实现21点算法，它根据参数 <code>card</code>的值来递增或递减变量<code>count</code>，函数返回一个由当前<code>count</code>和 <code>&quot;Bet&quot;</code>(<code>count&gt;0</code>)或<code>&quot;Hold&quot;</code>(<code>count&lt;=0</code>) 拼接的字符串。注意<code>count</code>和<code>&quot;Bet&quot;</code> 或 <code>&quot;Hold&quot;</code>应该用空格分开。</p>
+<p><strong>例如：</strong><br><code>&quot;-3 Hold&quot;&quot;5 Bet&quot;</code></p>
+<p><strong>提示</strong><br>既然card的值为7、8、9时，count值不变，那我们就可以忽略这种情况。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">var count = 0;</span><br><span class="line"></span><br><span class="line">/*function cc(card) &#123;</span><br><span class="line">  // 请把你的代码写在这条注释以下</span><br><span class="line">var values=&#123;</span><br><span class="line">  2:1,3:1,4:1,5:1,6:1,</span><br><span class="line"> 7:0,8:0,9:0,</span><br><span class="line">  10:-1,&apos;J&apos;:-1,&apos;Q&apos;:-1,&apos;K&apos;:-1,&apos;A&apos;:-1</span><br><span class="line">&#125;</span><br><span class="line">  count+=values[card];</span><br><span class="line">  return count+&quot; &quot;+(count&gt;0 ? &quot;Bet&quot;:&quot;Hold&quot;);</span><br><span class="line">  // 请把你的代码写在这条注释以上</span><br><span class="line">&#125;*/</span><br><span class="line">function cc(card) &#123;</span><br><span class="line">  // 请把你的代码写在这条注释以下</span><br><span class="line">  switch (card)&#123;</span><br><span class="line">    case 2:</span><br><span class="line">    case 3:</span><br><span class="line">    case 4:</span><br><span class="line">    case 5:</span><br><span class="line">    case 6:</span><br><span class="line">      ++count;</span><br><span class="line">      break;</span><br><span class="line">    case 10:</span><br><span class="line">    case &apos;J&apos;:</span><br><span class="line">    case &apos;Q&apos;:</span><br><span class="line">    case &apos;K&apos;://注意单引号和双引号的区别</span><br><span class="line">    case &apos;A&apos;:</span><br><span class="line">      --count;</span><br><span class="line">      break;</span><br><span class="line">    default:</span><br><span class="line">      count+=0;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if(count&gt;0)&#123;</span><br><span class="line">     return count+&quot; &quot;+&quot;Bet&quot;;</span><br><span class="line">   &#125;</span><br><span class="line">  else if(count&lt;=0)</span><br><span class="line">  &#123;return count+&quot; &quot;+&quot;Hold&quot;;&#125;</span><br><span class="line"></span><br><span class="line">  // 请把你的代码写在这条注释以上</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 你可以在这里添加/删除 cc 方法的调用来测试结果</span><br><span class="line">// 提示: 左边只会显示最后一次执行的返回值</span><br><span class="line">cc(7); cc(8); cc(9);</span><br></pre></td></tr></table></figure>
+
+<h4 id="？？？Testing-Objects-for-Properties"><a href="#？？？Testing-Objects-for-Properties" class="headerlink" title="？？？Testing Objects for Properties"></a>？？？Testing Objects for Properties</h4><hr>
+<p>有时检查一个对象属性是否存在是非常有用的，我们可以用<code>.hasOwnProperty(propname)</code>方法来检查对象是否有该属性。如果有返回<code>true</code>，反之返回 <code>false</code>。</p>
+<p><strong>举例</strong></p>
+<blockquote>
+<p>var myObj = {<br>  top: “hat”,<br>  bottom: “pants”<br>};<br>myObj.hasOwnProperty(“top”);    // true<br>myObj.hasOwnProperty(“middle”); // false</p>
+</blockquote>
+<h4 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h4><p>修改函数<code>checkObj</code>检查<code>myObj</code>是否有<code>checkProp</code>属性，如果属性存在，返回属性对应的值，如果不存在，返回 <code>&quot;Not Found&quot;</code>。</p>
+<p>注意：如果你需要通过变量来访问对象的属性值，请用中括号操作符，点操作符不支持变量。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 初始化变量</span></span><br><span class="line"><span class="keyword">var</span> myObj = &#123;</span><br><span class="line">  gift: <span class="string">"pony"</span>,</span><br><span class="line">  pet: <span class="string">"kitten"</span>,</span><br><span class="line">  bed: <span class="string">"sleigh"</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkObj</span>(<span class="params">checkProp</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 请把你的代码写在这条注释以下</span></span><br><span class="line">  <span class="keyword">if</span>(myObj.hasOwnProperty(checkProp))</span><br><span class="line">  &#123;</span><br><span class="line">   <span class="comment">// return myObj.checkProp;为什么不行??</span></span><br><span class="line">    <span class="keyword">return</span> myObj[checkProp];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">else</span> </span><br><span class="line">    <span class="keyword">return</span> <span class="string">"Not Found"</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 你可以修改这一行来测试你的代码</span></span><br><span class="line">checkObj(<span class="string">"gift"</span>);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<hr>
+<h1 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h1><h4 id="Introducing-JavaScript-Object-Notation-JSON"><a href="#Introducing-JavaScript-Object-Notation-JSON" class="headerlink" title="Introducing JavaScript Object Notation JSON"></a>Introducing JavaScript Object Notation JSON</h4><p>JavaScript Object Notation 简称 <code>JSON</code>，它使用JavaScript对象的格式来存储数据。JSON是灵活的，因为它允许 数据结构 是 字符串，数字，布尔值，字符串，和 对象 的任意组合。</p>
+<p>这里是一个JSON对象的示例：</p>
+<blockquote>
+<p>var ourMusic = [<br>  {<br>    “artist”: “Daft Punk”,<br>    “title”: “Homework”,<br>    “release_year”: 1997,<br>    “formats”: [<br>      “CD”,<br>      “Cassette”,<br>      “LP” ],<br>    “gold”: true<br>  }<br>];</p>
+</blockquote>
+<p>这是一个对象数组，并且对象有各种关于专辑的 详细信息。它也有一个嵌套的 <code>formats</code> 的数组。附加专辑记录可以被添加到数组的最上层。</p>
+<p><strong>提示</strong><br>数组中有多个 JSON 对象的时候，对象与对象之间要用逗号隔开。</p>
+<h4 id="？？？Record-Collection"><a href="#？？？Record-Collection" class="headerlink" title="？？？Record Collection"></a>？？？Record Collection</h4><hr>
+<p>右边有一个JSON对象，代表着你的专辑集。每一张专辑由一个唯一的id标识，并具有多种属性。但并非所有的专辑都有完整的信息。</p>
+<p>写一个函数，它有个三个参数，<code>id</code>、<code>prop</code>、 <code>value</code>。</p>
+<p>如果 <code>value !=&#39;&#39;</code> 而且<code>prop != &#39;tracks&#39;</code> ，<code>collectionCopy[id][prop]=value;</code>。</p>
+<p>如果 <code>value !=&#39;&#39;</code> 而且<code>prop == &#39;tracks&#39;</code> ，<code>collectionCopy[id][prop].push(value);</code>。</p>
+<p>如果 <code>value == &#39;&#39;</code> ，<code>delete collectionCopy[id][prop];</code>。</p>
+<p>记住：函数返回的永远是整个对象。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 初始化变量</span></span><br><span class="line"><span class="keyword">var</span> collection = &#123;</span><br><span class="line">    <span class="number">2548</span>: &#123;</span><br><span class="line">      album: <span class="string">"Slippery When Wet"</span>,</span><br><span class="line">      artist: <span class="string">"Bon Jovi"</span>,</span><br><span class="line">      tracks: [ </span><br><span class="line">        <span class="string">"Let It Rock"</span>, </span><br><span class="line">        <span class="string">"You Give Love a Bad Name"</span> </span><br><span class="line">      ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="number">2468</span>: &#123;</span><br><span class="line">      album: <span class="string">"1999"</span>,</span><br><span class="line">      artist: <span class="string">"Prince"</span>,</span><br><span class="line">      tracks: [ </span><br><span class="line">        <span class="string">"1999"</span>, </span><br><span class="line">        <span class="string">"Little Red Corvette"</span> </span><br><span class="line">      ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="number">1245</span>: &#123;</span><br><span class="line">      artist: <span class="string">"Robert Palmer"</span>,</span><br><span class="line">      tracks: [ ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="number">5439</span>: &#123;</span><br><span class="line">      album: <span class="string">"ABBA Gold"</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 深拷贝 collection，用于测试</span></span><br><span class="line"><span class="keyword">var</span> collectionCopy = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(collection));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 请只修改这条注释以下的代码</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">update</span>(<span class="params">id, prop, value</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span>((value !== <span class="string">''</span>)&amp;&amp;(prop != <span class="string">'tracks'</span>))&#123;</span><br><span class="line">    collectionCopy[id][prop]=value;<span class="comment">//为啥要用全等</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span>((value !== <span class="string">''</span>)&amp;&amp;(prop == <span class="string">'tracks'</span>))&#123;</span><br><span class="line">    collectionCopy[id][prop].push(value);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span>(value === <span class="string">''</span>)&#123;</span><br><span class="line">    <span class="keyword">delete</span> collectionCopy[id][prop];</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> collection;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 你可以修改这一行来测试你的代码</span></span><br><span class="line">update(<span class="number">5439</span>, <span class="string">"artist"</span>, <span class="string">"ABBA"</span>);</span><br></pre></td></tr></table></figure>
+
+<h4 id="Profile-Lookup"><a href="#Profile-Lookup" class="headerlink" title="Profile Lookup"></a>Profile Lookup</h4><hr>
+<p>我们有一个对象数组，里面存储着通讯录。</p>
+<p>函数 <code>lookUp</code> 有两个预定义参数：<code>firstName</code>值和<code>prop</code>属性 。</p>
+<p>函数将会检查通讯录中是否存在一个与传入的 <code>firstName</code> 相同的联系人。如果存在，那么还需要检查对应的联系人中是否存在 <code>prop</code>属性。</p>
+<p>如果它们都存在，函数返回<code>prop</code>属性对应的值。</p>
+<p>如果<code>firstName</code> 值不存在，返回 <code>&quot;No such contact&quot;</code>。</p>
+<p>如果<code>prop</code> 属性不存在，返回 <code>&quot;No such property&quot;</code>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">//初始化变量</span><br><span class="line">var contacts = [</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;firstName&quot;: &quot;Akira&quot;,</span><br><span class="line">        &quot;lastName&quot;: &quot;Laine&quot;,</span><br><span class="line">        &quot;number&quot;: &quot;0543236543&quot;,</span><br><span class="line">        &quot;likes&quot;: [&quot;Pizza&quot;, &quot;Coding&quot;, &quot;Brownie Points&quot;]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;firstName&quot;: &quot;Harry&quot;,</span><br><span class="line">        &quot;lastName&quot;: &quot;Potter&quot;,</span><br><span class="line">        &quot;number&quot;: &quot;0994372684&quot;,</span><br><span class="line">        &quot;likes&quot;: [&quot;Hogwarts&quot;, &quot;Magic&quot;, &quot;Hagrid&quot;]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;firstName&quot;: &quot;Sherlock&quot;,</span><br><span class="line">        &quot;lastName&quot;: &quot;Holmes&quot;,</span><br><span class="line">        &quot;number&quot;: &quot;0487345643&quot;,</span><br><span class="line">        &quot;likes&quot;: [&quot;Intriguing Cases&quot;, &quot;Violin&quot;]</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        &quot;firstName&quot;: &quot;Kristian&quot;,</span><br><span class="line">        &quot;lastName&quot;: &quot;Vos&quot;,</span><br><span class="line">        &quot;number&quot;: &quot;unknown&quot;,</span><br><span class="line">        &quot;likes&quot;: [&quot;Javascript&quot;, &quot;Gaming&quot;, &quot;Foxes&quot;]</span><br><span class="line">    &#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">function lookUp(firstName, prop)&#123;</span><br><span class="line">// 请把你的代码写在这条注释以下</span><br><span class="line">for(var i = 0;i &lt; contacts.length;i++)</span><br><span class="line">&#123;</span><br><span class="line">  if(firstName == contacts[i].firstName)</span><br><span class="line">  &#123;</span><br><span class="line">    if(contacts[i].hasOwnProperty(prop))</span><br><span class="line">    &#123;</span><br><span class="line">      return contacts[i][prop];</span><br><span class="line">    &#125;</span><br><span class="line">    else return &quot;No such property&quot;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"> return &quot;No such contact&quot;;</span><br><span class="line">// 请把你的代码写在这条注释以上</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 你可以修改这一行来测试你的代码</span><br><span class="line">lookUp(&quot;Akira&quot;, &quot;likes&quot;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="重要（关于随机数）！Generate-Random-Whole-Numbers-with-JavaScript"><a href="#重要（关于随机数）！Generate-Random-Whole-Numbers-with-JavaScript" class="headerlink" title="重要（关于随机数）！Generate Random Whole Numbers with JavaScript"></a>重要（关于随机数）！Generate Random Whole Numbers with JavaScript</h4><hr>
+<p>生成随机小数很棒，但随机数更有用的地方在于生成随机整数。</p>
+<ol>
+<li>用 <code>Math.random()</code> 生成一个随机小数。</li>
+<li>把这个随机小数乘以 <code>20</code>。</li>
+<li>用 <code>Math.floor()</code> 向下取整 获得它最近的整数。</li>
+</ol>
+<p>记住 <code>Math.random()</code> 永远不会返回 <code>1</code>。同时因为我们是在用 <code>Math.floor()</code> 向下取整，所以最终我们获得的结果不可能有 <code>20</code>。这确保了我们获得了一个在0到19之间的整数。</p>
+<p>把操作连缀起来，代码类似于下面：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * <span class="number">20</span>);</span><br></pre></td></tr></table></figure>
+
+<p>我们先调用 <code>Math.random()</code>，把它的结果乘以20，然后把上一步的结果传给 <code>Math.floor()</code>，最终通过向下取整获得最近的整数。</p>
+<p>我们之前生成的随机数是在0到某个数之间，现在我们要生成的随机数是在两个指定的数之间。</p>
+<p>我们需要定义一个最小值和一个最大值。</p>
+<p>下面是我们将要使用的方法，仔细看看并尝试理解这行代码到底在干嘛：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * (max - min + <span class="number">1</span>)) + min</span><br></pre></td></tr></table></figure>
+
+<h4 id="Sift-through-Text-with-Regular-Expressions"><a href="#Sift-through-Text-with-Regular-Expressions" class="headerlink" title="Sift through Text with Regular Expressions"></a>Sift through Text with Regular Expressions</h4><hr>
+<p><code>Regular expressions</code> 正则表达式被用来根据某种匹配模式来寻找<code>strings</code>中的某些单词。</p>
+<p>举例：如果我们想要找到字符串<code>The dog chased the cat</code>中单词 <code>the</code>，我们可以使用下面的正则表达式: <code>/the/gi</code></p>
+<p>我们可以把这个正则表达式分成几段：</p>
+<p><code>/</code> 是这个正则表达式的头部</p>
+<p><code>the</code> 是我们想要匹配的模式</p>
+<p><code>/</code> 是这个正则表达式的尾部</p>
+<p><code>g</code> 代表着 <code>global</code>(全局)，意味着返回所有的匹配而不仅仅是第一个。</p>
+<p><code>i</code> 代表着忽略大小写，意思是当我们寻找匹配的字符串的时候忽略掉字母的大小写。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 初始化变量</span></span><br><span class="line"><span class="keyword">var</span> testString = <span class="string">"Ada Lovelace and Charles Babbage designed the first computer and the software that would have run on it."</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 举例</span></span><br><span class="line"><span class="keyword">var</span> expressionToGetSoftware = <span class="regexp">/software/gi</span>;</span><br><span class="line"><span class="keyword">var</span> softwareCount = testString.match(expressionToGetSoftware).length;</span><br><span class="line">  </span><br><span class="line"></span><br><span class="line"><span class="comment">// 请只修改这条注释以下的代码</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> expression = <span class="regexp">/and/gi</span>;  <span class="comment">// 请修改这一行</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 请只修改这条注释以上的代码</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 用 andCount 存储 testString 中匹配到 expression 的次数</span></span><br><span class="line"><span class="keyword">var</span> andCount = testString.match(expression).length;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Find-Numbers-with-Regular-Expressions"><a href="#Find-Numbers-with-Regular-Expressions" class="headerlink" title="Find Numbers with Regular Expressions"></a>Find Numbers with Regular Expressions</h4><hr>
+<p>我们可以在正则表达式中使用特殊选择器来选取特殊类型的值。</p>
+<p>特殊选择器中的一种就是数字选择器<code>\d</code>，意思是被用来获取一个字符串的数字。</p>
+<p>在JavaScript中, 数字选择器类似于: <code>/\d/g</code>。</p>
+<p>在选择器后面添加一个加号标记(<code>+</code>)，例如：<code>/\d+/g</code>，它允许这个正则表达式匹配一个或更多数字。</p>
+<p>尾部的<code>g</code>是’global’的简写，意思是允许这个正则表达式 找到所有的匹配而不是仅仅找到第一个匹配。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 初始化变量</span></span><br><span class="line"><span class="keyword">var</span> testString = <span class="string">"There are 3 cats but 4 dogs."</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 请只修改这条注释以下的代码</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> expression = <span class="regexp">/\d+/g</span>;  <span class="comment">// 请修改这一行</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 请只修改这条注释以上的代码</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 用 digitCount 存储 testString 中匹配到 expression 的次数</span></span><br><span class="line"><span class="keyword">var</span> digitCount = testString.match(expression).length;</span><br></pre></td></tr></table></figure>
+
+<p>我们也可以使用正则表达式选择器 <code>\s</code> 来选择一个字符串中的空白。</p>
+<p>空白字符有 <code>&quot; &quot;</code> (空格符)、<code>\r</code> (回车符)、<code>\n</code> (换行符)、<code>\t</code> (制表符) 和 <code>\f</code> (换页符)。</p>
+<p>空白正则表达式类似于：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/\s+<span class="regexp">/g</span></span><br></pre></td></tr></table></figure>
+
+<p>你可以用正则表达式选择器的大写版本 来转化任何匹配。</p>
+<p>举个例子：<code>\s</code> 匹配任何空白字符，<code>\S</code>大写 匹配任何非空白字符</p>
+<h4 id="Add-your-JavaScript-Slot-Machine-Slots"><a href="#Add-your-JavaScript-Slot-Machine-Slots" class="headerlink" title="!!!!!Add your JavaScript Slot Machine Slots"></a>!!!!!Add your JavaScript Slot Machine Slots</h4><hr>
+<p>现在我们的老虎机每次生存3个随机数，我们得去检查随机数是否全部相等的情况。</p>
+<p>如果全部相等，我们应该提示用户他们赢了，并返回中奖号码，否则我们应该返回null。</p>
+<p><code>null</code> 是JavaScript中的一种数据类型，意味着空。</p>
+<p>当这3个随机数相等的时候，判定用户赢。让我们创建一个<code>if statement</code>，用多个条件按顺序来检查它们是否相等。类似于：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if (slotOne === slotTwo &amp;&amp; slotTwo === slotThree)&#123;</span><br><span class="line">  return slotOne;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>当3个随机数都一样的时候，我们把 <code>&quot;It&#39;s A Win&quot;</code> 追加到class <code>logger</code>的html中。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">runSlots</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> slotOne;</span><br><span class="line">    <span class="keyword">var</span> slotTwo;</span><br><span class="line">    <span class="keyword">var</span> slotThree;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">var</span> images = [<span class="string">"//i.imgur.com/9H17QFk.png"</span>, <span class="string">"//i.imgur.com/9RmpXTy.png"</span>, <span class="string">"//i.imgur.com/VJnmtt5.png"</span>];</span><br><span class="line">    </span><br><span class="line">    slotOne = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * (<span class="number">3</span> - <span class="number">1</span> + <span class="number">1</span>)) + <span class="number">1</span>;</span><br><span class="line">    slotTwo = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * (<span class="number">3</span> - <span class="number">1</span> + <span class="number">1</span>)) + <span class="number">1</span>;</span><br><span class="line">    slotThree = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * (<span class="number">3</span> - <span class="number">1</span> + <span class="number">1</span>)) + <span class="number">1</span>;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 请把你的代码写在这条注释以下</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> (slotOne === slotTwo &amp;&amp; slotTwo === slotThree)</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">return</span> slotOne;</span><br><span class="line">      $(<span class="string">".logger"</span>).append(<span class="string">" It's A Win"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">      <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 请把你的代码写在这条注释以上</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> (slotOne !== <span class="literal">undefined</span> &amp;&amp; slotTwo !== <span class="literal">undefined</span> &amp;&amp; slotThree !== <span class="literal">undefined</span>)&#123;</span><br><span class="line">      $(<span class="string">".logger"</span>).html(slotOne + <span class="string">" "</span> + slotTwo + <span class="string">" "</span> + slotThree);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    $(<span class="string">".logger"</span>).append(<span class="string">" Not A Win"</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> [slotOne, slotTwo, slotThree];</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  $(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">     $(<span class="string">".go"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">       runSlots();</span><br><span class="line">     &#125;);</span><br><span class="line">   &#125;);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp"> </span></span><br><span class="line"><span class="regexp">&lt;div&gt;</span></span><br><span class="line"><span class="regexp"> &lt;div class = "container inset"&gt;</span></span><br><span class="line"><span class="regexp">   &lt;div class = "header inset"&gt;</span></span><br><span class="line"><span class="regexp">     &lt;img src="/im</span>ages/freecodecamp_logo.svg<span class="string">" alt="</span>learn to code JavaScript at Free Code Camp logo<span class="string">" class="</span>img-responsive nav-logo<span class="string">"&gt;</span></span><br><span class="line"><span class="string">     &lt;h2&gt;FCC Slot Machine&lt;/h2&gt;</span></span><br><span class="line"><span class="string">   &lt;/div&gt;</span></span><br><span class="line"><span class="string">   &lt;div class = "</span>slots inset<span class="string">"&gt;</span></span><br><span class="line"><span class="string">     &lt;div class = "</span>slot inset<span class="string">"&gt;</span></span><br><span class="line"><span class="string">       </span></span><br><span class="line"><span class="string">     &lt;/div&gt;</span></span><br><span class="line"><span class="string">     &lt;div class = "</span>slot inset<span class="string">"&gt;</span></span><br><span class="line"><span class="string">       </span></span><br><span class="line"><span class="string">     &lt;/div&gt;</span></span><br><span class="line"><span class="string">     &lt;div class = "</span>slot inset<span class="string">"&gt;</span></span><br><span class="line"><span class="string">       </span></span><br><span class="line"><span class="string">     &lt;/div&gt;</span></span><br><span class="line"><span class="string">   &lt;/div&gt;</span></span><br><span class="line"><span class="string">   &lt;br/&gt;</span></span><br><span class="line"><span class="string">   &lt;div class = "</span>outset<span class="string">"&gt;</span></span><br><span class="line"><span class="string">     &lt;button class = "</span>go inset<span class="string">"&gt;</span></span><br><span class="line"><span class="string">       Go</span></span><br><span class="line"><span class="string">     &lt;/button&gt;</span></span><br><span class="line"><span class="string">   &lt;/div&gt;</span></span><br><span class="line"><span class="string">   &lt;br/&gt;</span></span><br><span class="line"><span class="string">   &lt;div class = "</span>foot inset<span class="string">"&gt;</span></span><br><span class="line"><span class="string">     &lt;span class = "</span>logger<span class="string">"&gt;&lt;/span&gt;</span></span><br><span class="line"><span class="string">   &lt;/div&gt;</span></span><br><span class="line"><span class="string"> &lt;/div&gt;</span></span><br><span class="line"><span class="string">&lt;/div&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;style&gt;</span></span><br><span class="line"><span class="string"> .container &#123;</span></span><br><span class="line"><span class="string">   background-color: #4a2b0f;</span></span><br><span class="line"><span class="string">   height: 400px;</span></span><br><span class="line"><span class="string">   width: 260px;</span></span><br><span class="line"><span class="string">   margin: 50px auto;</span></span><br><span class="line"><span class="string">   border-radius: 4px;</span></span><br><span class="line"><span class="string"> &#125;</span></span><br><span class="line"><span class="string"> .header &#123;</span></span><br><span class="line"><span class="string">   border: 2px solid #fff;</span></span><br><span class="line"><span class="string">   border-radius: 4px;</span></span><br><span class="line"><span class="string">   height: 55px;</span></span><br><span class="line"><span class="string">   margin: 14px auto;</span></span><br><span class="line"><span class="string">   background-color: #457f86</span></span><br><span class="line"><span class="string"> &#125;</span></span><br><span class="line"><span class="string"> .header h2 &#123;</span></span><br><span class="line"><span class="string">   height: 30px;</span></span><br><span class="line"><span class="string">   margin: auto;</span></span><br><span class="line"><span class="string"> &#125;</span></span><br><span class="line"><span class="string"> .header h2 &#123;</span></span><br><span class="line"><span class="string">   font-size: 14px;</span></span><br><span class="line"><span class="string">   margin: 0 0;</span></span><br><span class="line"><span class="string">   padding: 0;</span></span><br><span class="line"><span class="string">   color: #fff;</span></span><br><span class="line"><span class="string">   text-align: center;</span></span><br><span class="line"><span class="string"> &#125;</span></span><br><span class="line"><span class="string"> .slots&#123;</span></span><br><span class="line"><span class="string">   display: flex;</span></span><br><span class="line"><span class="string">   background-color: #457f86;</span></span><br><span class="line"><span class="string">   border-radius: 6px;</span></span><br><span class="line"><span class="string">   border: 2px solid #fff;</span></span><br><span class="line"><span class="string"> &#125;</span></span><br><span class="line"><span class="string"> .slot&#123;</span></span><br><span class="line"><span class="string">   flex: 1 0 auto;</span></span><br><span class="line"><span class="string">   background: white;</span></span><br><span class="line"><span class="string">   height: 75px;</span></span><br><span class="line"><span class="string">   margin: 8px;</span></span><br><span class="line"><span class="string">   border: 2px solid #215f1e;</span></span><br><span class="line"><span class="string">   border-radius: 4px;</span></span><br><span class="line"><span class="string"> &#125;</span></span><br><span class="line"><span class="string"> .go &#123;</span></span><br><span class="line"><span class="string">   width: 100%;</span></span><br><span class="line"><span class="string">   color: #fff;</span></span><br><span class="line"><span class="string">   background-color: #457f86;</span></span><br><span class="line"><span class="string">   border: 2px solid #fff;</span></span><br><span class="line"><span class="string">   border-radius: 2px;</span></span><br><span class="line"><span class="string">   box-sizing: none;</span></span><br><span class="line"><span class="string">   outline: none!important;</span></span><br><span class="line"><span class="string"> &#125;</span></span><br><span class="line"><span class="string"> .foot &#123;</span></span><br><span class="line"><span class="string">   height: 150px;</span></span><br><span class="line"><span class="string">   background-color: 457f86;</span></span><br><span class="line"><span class="string">   border: 2px solid #fff;</span></span><br><span class="line"><span class="string"> &#125;</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string"> .logger &#123;</span></span><br><span class="line"><span class="string">   color: white;</span></span><br><span class="line"><span class="string">   margin: 10px;</span></span><br><span class="line"><span class="string"> &#125;</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string"> .outset &#123;</span></span><br><span class="line"><span class="string">   -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);</span></span><br><span class="line"><span class="string">   -moz-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);</span></span><br><span class="line"><span class="string">     box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);</span></span><br><span class="line"><span class="string"> &#125;</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string"> .inset &#123;</span></span><br><span class="line"><span class="string">   -webkit-box-shadow: inset 0px 0px 15px -2px rgba(0,0,0,0.75);</span></span><br><span class="line"><span class="string">   -moz-box-shadow: inset 0px 0px 15px -2px rgba(0,0,0,0.75);</span></span><br><span class="line"><span class="string">   box-shadow: inset 0px 0px 15px -2px rgba(0,0,0,0.75);</span></span><br><span class="line"><span class="string"> &#125;</span></span><br><span class="line"><span class="string">&lt;/style&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Bring-your-JavaScript-Slot-Machine-to-Life"><a href="#Bring-your-JavaScript-Slot-Machine-to-Life" class="headerlink" title="Bring your JavaScript Slot Machine to Life"></a>Bring your JavaScript Slot Machine to Life</h4><hr>
+<p>让我们用 jQuery 选择器 <code>$(&quot;.slot&quot;)</code> 获得所有老虎机。</p>
+<p>一旦获取到所有老虎机，我们可以通过中括号操作符获取到每一个老虎机：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$($(&quot;.slot&quot;)[0]).html(slotOne);</span><br></pre></td></tr></table></figure>
+
+<p>jQuery将会获取到第一个老虎机，并更新它的HTML为正确的数字。</p>
+<h4 id="Give-your-JavaScript-Slot-Machine-some-Stylish-Images"><a href="#Give-your-JavaScript-Slot-Machine-some-Stylish-Images" class="headerlink" title="Give your JavaScript Slot Machine some Stylish Images"></a>Give your JavaScript Slot Machine some Stylish Images</h4><hr>
+<p>现在给我们的老虎机加点图片。</p>
+<p>我们已经为你准备好了图片<code>images</code>，我们可以通过不同的索引来获取每个图片。</p>
+<p>现在让我们设置第一个老虎机根据随机数来显示一张图片：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$($(&apos;.slot&apos;)[0]).html(&apos;&lt;img src = &quot;&apos; + images[slotOne-1] + &apos;&quot;&gt;&apos;);</span><br></pre></td></tr></table></figure>
+
+
+      
+
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃零食啦<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-<a href="/2019/08/21/jQuery/" class="archive-article-date">
-  	<time datetime="2019-08-21T01:58:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/21/jQuery/">jQuery</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">基础语法</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jQuery</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">相关问题记录</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">freeCodeCamp</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/22/JavaScript基础知识/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
 
-<a href="/2019/08/21/html-css-bootstrap/" class="archive-article-date">
-  	<time datetime="2019-08-21T01:20:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-21</time>
-</a>
+  
+<nav id="article-nav">
+  
+    <a href="/2019/08/24/JavaScript面向对象/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          JavaScript面向对象
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/22/HTML-css知识点杂记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTML+css知识点杂记</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/21/html-css-bootstrap/">html+css+bootstrap</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">bootstrap</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Declare-JavaScript-Variables"><span class="toc-number">1.</span> <span class="toc-text">Declare JavaScript Variables</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Storing-Values-with-the-Equal-Operator"><span class="toc-number">2.</span> <span class="toc-text">Storing Values with the Equal Operator</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Initializing-Variables-with-the-Equal-Operator"><span class="toc-number">3.</span> <span class="toc-text">Initializing Variables with the Equal Operator</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Understanding-Uninitialized-Variables"><span class="toc-number">4.</span> <span class="toc-text">Understanding Uninitialized Variables</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Understanding-Case-Sensitivity-in-Variables"><span class="toc-number">5.</span> <span class="toc-text">Understanding Case Sensitivity in Variables</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#最佳实践"><span class="toc-number">6.</span> <span class="toc-text">最佳实践</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Add-Two-Numbers-with-JavaScript"><span class="toc-number">7.</span> <span class="toc-text">Add Two Numbers with JavaScript</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Escaping-Literal-Quotes-in-Strings"><span class="toc-number">8.</span> <span class="toc-text">Escaping Literal Quotes in Strings</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Quoting-Strings-with-Single-Quotes"><span class="toc-number">9.</span> <span class="toc-text">Quoting Strings with Single Quotes</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#注意Counting-Cards"><span class="toc-number">10.</span> <span class="toc-text">注意Counting Cards</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#？？？Testing-Objects-for-Properties"><span class="toc-number">11.</span> <span class="toc-text">？？？Testing Objects for Properties</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#任务"><span class="toc-number">12.</span> <span class="toc-text">任务</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JSON"><span class="toc-number"></span> <span class="toc-text">JSON</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Introducing-JavaScript-Object-Notation-JSON"><span class="toc-number">1.</span> <span class="toc-text">Introducing JavaScript Object Notation JSON</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#？？？Record-Collection"><span class="toc-number">2.</span> <span class="toc-text">？？？Record Collection</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Profile-Lookup"><span class="toc-number">3.</span> <span class="toc-text">Profile Lookup</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#重要（关于随机数）！Generate-Random-Whole-Numbers-with-JavaScript"><span class="toc-number">4.</span> <span class="toc-text">重要（关于随机数）！Generate Random Whole Numbers with JavaScript</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Sift-through-Text-with-Regular-Expressions"><span class="toc-number">5.</span> <span class="toc-text">Sift through Text with Regular Expressions</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Find-Numbers-with-Regular-Expressions"><span class="toc-number">6.</span> <span class="toc-text">Find Numbers with Regular Expressions</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Add-your-JavaScript-Slot-Machine-Slots"><span class="toc-number">7.</span> <span class="toc-text">!!!!!Add your JavaScript Slot Machine Slots</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Bring-your-JavaScript-Slot-Machine-to-Life"><span class="toc-number">8.</span> <span class="toc-text">Bring your JavaScript Slot Machine to Life</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Give-your-JavaScript-Slot-Machine-some-Stylish-Images"><span class="toc-number">9.</span> <span class="toc-text">Give your JavaScript Slot Machine some Stylish Images</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+        
+    </div>
+</aside>
 
-<a href="/2019/08/20/Bootstrap/" class="archive-article-date">
-  	<time datetime="2019-08-20T14:33:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-20</time>
-</a>
-        </div>
-    	 
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/20/Bootstrap/">Bootstrap</a>
-    </h1>
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "http://yoursite.com/2019/08/22/JavaScript基础知识/", 
+    sourceId: "JavaScript基础知识",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">bootstrap</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
+
+
+
 
 
           </div>
@@ -363,9 +631,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
