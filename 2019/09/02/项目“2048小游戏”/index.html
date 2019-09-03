@@ -9,14 +9,14 @@
   <title>项目“2048小游戏” | Jean_Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="读2048小游戏程序记录主要在网友开源的代码中记录读代码过程中不太熟悉的接口和属性等，并且整理JS算法思路，进行部分修改。">
-<meta name="keywords" content="项目,html,js">
+<meta name="keywords" content="html,项目,js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="项目“2048小游戏”">
 <meta property="og:url" content="http://yoursite.com/2019/09/02/项目“2048小游戏”/index.html">
 <meta property="og:site_name" content="Jean_Blog">
 <meta property="og:description" content="读2048小游戏程序记录主要在网友开源的代码中记录读代码过程中不太熟悉的接口和属性等，并且整理JS算法思路，进行部分修改。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-03T12:24:59.968Z">
+<meta property="og:updated_time" content="2019-09-03T16:59:03.234Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="项目“2048小游戏”">
 <meta name="twitter:description" content="读2048小游戏程序记录主要在网友开源的代码中记录读代码过程中不太熟悉的接口和属性等，并且整理JS算法思路，进行部分修改。">
@@ -193,7 +193,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1.5k字</span>
+        <span class="post-count">1.7k字</span>
       </span>
     </span>
 
@@ -202,7 +202,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">5分</span>
+        <span class="post-count">6分</span>
       </span>
     </span>
 </div>
@@ -279,11 +279,19 @@
 </li>
 </ol>
 <hr>
-<h3 id="js思路："><a href="#js思路：" class="headerlink" title="js思路："></a>js思路：</h3><p>初始化两层循环建立一个4*4的数组，初始化为空数组，然后调用someNextNum函数两次获取两个随机数；</p>
+<h3 id="js思路"><a href="#js思路" class="headerlink" title="js思路:"></a>js思路:</h3><p>初始化两层循环建立一个4*4的数组，初始化为空数组，然后调用someNextNum函数两次获取两个随机数；</p>
 <p>然后调用resetFlex函数刷新视图模块，用getElementById()函数引用css中的对象，双重循环遍历二维数组改变每个位置的innerHTML和className值，然后找到id为score的元素innerHTML修改分数值；以上每次循环都要做一次，然后还要判断一下游戏状态标志位state，如果游戏结束则将id等于gameover的标签的。style.display属性设为block，并且将id为final元素的innerHTML设置为显示最终得分，将原来container的显示设置为none；否则gameover的display属性设置为none。</p>
 <p>一般先运行一次resetFlex渲染页面；</p>
 <p>监听键盘事件：绑定addEventListener（‘keydown’，function）事件，判断按键是上/下/左/右，对应不同的操作函数，操作函数内部如果是横向（左右）就对每一行循环，查找下一个带值的块，如果当前块等于0就把下一个带值的块赋给当前块并且将带值块清零；如果当前块和下一个带值的块相等，则数字×2付给当前块，把带值块清空，并且把值加到总分里。向右就从最大往0循环判断。</p>
 <p>监听鼠标滑动效果mousedown事件；</p>
+<p>注意：操作函数内部有move函数，这个函数里有个callback回调函数，作用是在move（callback）函数内部某个位置调用callback();可以去执行move(a函数)里的a函数，执行完在回到callback();调用的下一行继续执行。</p>
+<p>!!鼠标滑动模块没看明白（Logic）</p>
+<hr>
+<h3 id="小技巧："><a href="#小技巧：" class="headerlink" title="小技巧："></a>小技巧：</h3><p>1.关于如何在块级元素中让文字水平和垂直都居中</p>
+<p>水平居中可以用text-align: center;</p>
+<p>垂直居中<strong>不</strong>可以用vertical-align: middle;至于这个属性干嘛用的可以百度一下。</p>
+<p>一个小技巧就是可以设置<strong>line-height=height</strong>，元素的高度等于行高，如果文字有两行可以设置line-height=二分之一height;</p>
+<p><a href="https://www.cnblogs.com/huchong/p/7875127.html" target="_blank" rel="noopener">参考</a></p>
 
       
 
@@ -324,11 +332,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">项目</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">项目</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -431,7 +439,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#读2048小游戏程序记录"><span class="toc-number">1.</span> <span class="toc-text">读2048小游戏程序记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#html"><span class="toc-number">1.1.</span> <span class="toc-text">.html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS"><span class="toc-number">1.2.</span> <span class="toc-text">.CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js"><span class="toc-number">1.3.</span> <span class="toc-text">.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js思路："><span class="toc-number">1.4.</span> <span class="toc-text">js思路：</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#读2048小游戏程序记录"><span class="toc-number">1.</span> <span class="toc-text">读2048小游戏程序记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#html"><span class="toc-number">1.1.</span> <span class="toc-text">.html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS"><span class="toc-number">1.2.</span> <span class="toc-text">.CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js"><span class="toc-number">1.3.</span> <span class="toc-text">.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js思路"><span class="toc-number">1.4.</span> <span class="toc-text">js思路:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小技巧："><span class="toc-number">1.5.</span> <span class="toc-text">小技巧：</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -564,14 +572,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">React</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">概念，JSX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">javascript</a>
               </li>
              
@@ -580,15 +580,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+                <a href="javascript:void(0)" class="js-tag color1">React</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">概念，JSX</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -608,11 +608,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">freeCodeCamp</a>
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -621,6 +621,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">githubpage</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">freeCodeCamp</a>
               </li>
              
               <li class="article-tag-list-item">
