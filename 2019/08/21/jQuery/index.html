@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>jQuery | Jean_Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Learn how Script Tags and Document Ready Work现在让我们开始学习最流行的JavaScript库jQuery吧，不用担心JavaScript本身，我们稍后会提到它。 在开始学习使用jQuery之前，我们需要加一些代码到HTML文件中。">
+  <meta name="description" content="一、基础知识Learn how Script Tags and Document Ready Work现在让我们开始学习最流行的JavaScript库jQuery吧，不用担心JavaScript本身，我们稍后会提到它。 在开始学习使用jQuery之前，我们需要加一些代码到HTML文件中。">
 <meta name="keywords" content="基础,语法,jQuery,freeCodeCamp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jQuery">
 <meta property="og:url" content="http://yoursite.com/2019/08/21/jQuery/index.html">
 <meta property="og:site_name" content="Jean_Blog">
-<meta property="og:description" content="Learn how Script Tags and Document Ready Work现在让我们开始学习最流行的JavaScript库jQuery吧，不用担心JavaScript本身，我们稍后会提到它。 在开始学习使用jQuery之前，我们需要加一些代码到HTML文件中。">
+<meta property="og:description" content="一、基础知识Learn how Script Tags and Document Ready Work现在让我们开始学习最流行的JavaScript库jQuery吧，不用担心JavaScript本身，我们稍后会提到它。 在开始学习使用jQuery之前，我们需要加一些代码到HTML文件中。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-26T07:46:36.559Z">
+<meta property="og:updated_time" content="2019-08-29T02:40:27.028Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="jQuery">
-<meta name="twitter:description" content="Learn how Script Tags and Document Ready Work现在让我们开始学习最流行的JavaScript库jQuery吧，不用担心JavaScript本身，我们稍后会提到它。 在开始学习使用jQuery之前，我们需要加一些代码到HTML文件中。">
+<meta name="twitter:description" content="一、基础知识Learn how Script Tags and Document Ready Work现在让我们开始学习最流行的JavaScript库jQuery吧，不用担心JavaScript本身，我们稍后会提到它。 在开始学习使用jQuery之前，我们需要加一些代码到HTML文件中。">
   
     <link rel="alternative" href="/atom.xml" title="Jean_Blog" type="application/atom+xml">
   
@@ -193,7 +193,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">2.4k字</span>
+        <span class="post-count">3.4k字</span>
       </span>
     </span>
 
@@ -202,7 +202,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">9分</span>
+        <span class="post-count">14分</span>
       </span>
     </span>
 </div>
@@ -219,7 +219,7 @@
 	
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="Learn-how-Script-Tags-and-Document-Ready-Work"><a href="#Learn-how-Script-Tags-and-Document-Ready-Work" class="headerlink" title="Learn how Script Tags and Document Ready Work"></a>Learn how Script Tags and Document Ready Work</h4><p>现在让我们开始学习最流行的JavaScript库jQuery吧，不用担心JavaScript本身，我们稍后会提到它。</p>
+        <h3 id="一、基础知识"><a href="#一、基础知识" class="headerlink" title="一、基础知识"></a>一、基础知识</h3><h4 id="Learn-how-Script-Tags-and-Document-Ready-Work"><a href="#Learn-how-Script-Tags-and-Document-Ready-Work" class="headerlink" title="Learn how Script Tags and Document Ready Work"></a>Learn how Script Tags and Document Ready Work</h4><p>现在让我们开始学习最流行的JavaScript库jQuery吧，不用担心JavaScript本身，我们稍后会提到它。</p>
 <p>在开始学习使用jQuery之前，我们需要加一些代码到HTML文件中。</p>
 <a id="more"></a>
 
@@ -345,6 +345,62 @@
 <h4 id="Use-jQuery-to-Modify-the-Entire-Page"><a href="#Use-jQuery-to-Modify-the-Entire-Page" class="headerlink" title="Use jQuery to Modify the Entire Page"></a>Use jQuery to Modify the Entire Page</h4><p>我们已经玩了这么久的jQuery游乐场，是时候结束这一节了。</p>
 <p>我们让整个body都有淡出效果(fadeOut)： <code>$(&quot;body&quot;).addClass(&quot;animated fadeOut&quot;);</code></p>
 <p>让我们做一些更为激动人心的事情，给body添加class <code>animated</code> 和<code>hinge</code> 。</p>
+<h3 id="二、jQuery应用举例"><a href="#二、jQuery应用举例" class="headerlink" title="二、jQuery应用举例"></a>二、jQuery应用举例</h3><ul>
+<li><h4 id="通过jQuery来绑定点击事件"><a href="#通过jQuery来绑定点击事件" class="headerlink" title="通过jQuery来绑定点击事件"></a>通过jQuery来绑定点击事件</h4></li>
+</ul>
+<p>首先，我们来看一下函数 <code>$(document).ready()</code> 干了些什么。</p>
+<p>这个函数中的代码只会在我们的页面加载时候运行一次，确保执行js之前页面所有的dom已经准备就绪。</p>
+<p>任务：给”Get Message”按钮绑定一个点击事件。</p>
+<p>我们先在<code>$(document).ready()</code>函数中增加一个<code>click</code>事件。代码如下：<code>$(document).ready()</code> function by adding this code:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#getMessage"</span>).on(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h4 id="通过点击事件来更改文本"><a href="#通过点击事件来更改文本" class="headerlink" title="通过点击事件来更改文本"></a>通过点击事件来更改文本</h4></li>
+</ul>
+<p>当我们点击按钮时，我们可以更新HTML页面</p>
+<p>任务：点击”Get Message”按钮，将class为<code>message</code> 的元素的文本改为：“Here is the message”。</p>
+<p>为此在我们的点击事件中加入如下代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">".message"</span>).html(<span class="string">"Here is the message"</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><h4 id="应用程序接口-API"><a href="#应用程序接口-API" class="headerlink" title="应用程序接口(API)"></a>应用程序接口(API)</h4></li>
+</ul>
+<p>当你需要根据服务器返回的数据来动态改变页面的时候，应用程序接口(API)就派上用场了。</p>
+<p>记住，API——应用程序接口(Application Programming Interface)是计算机之间相互交流沟通的工具。</p>
+<p>许多网站的应用程序接口(API)都是通过一种称为JSON格式的数据来传输的，JSON 是 JavaScript Object Notation的简写。</p>
+<p>其实如果你曾经创建过JS对象的话，你就已经使用了这种数据格式，JSON是一种非常简洁的数据格式。</p>
+<p>它通常表现为了两种形式，一种为单个对象，一种为多个对象</p>
+<p>单个对象类似于：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="attr">name</span>:<span class="string">'盖伦'</span>,<span class="attr">advantage</span>:<span class="string">'单挑无敌'</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<p>多个对象类似于：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#123;<span class="attr">name</span>:<span class="string">'盖伦'</span>,<span class="attr">advantage</span>:<span class="string">'单挑无敌'</span>&#125;,&#123;<span class="attr">name</span>:<span class="string">'诺克'</span>,<span class="attr">advantage</span>:<span class="string">'上单霸主'</span>&#125;]</span><br></pre></td></tr></table></figure>
+
+<p>每个对象属性和属性值的组合就是我们经常听到的”键值对(key-value pairs)”。</p>
+<p>让我们从之前的猫图API拿取数据吧。</p>
+<p>你应该在你的点击事件中加入如下的代码：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$.getJSON(<span class="string">"/json/cats.json"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">json</span>) </span>&#123;</span><br><span class="line">  $(<span class="string">".message"</span>).html(<span class="built_in">JSON</span>.stringify(json));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>在这之后，点击”Get Message”按钮。你的Ajax函数将把文字”The message will go here”替换成此从FreeCodeCam的猫图API中获得的原始JSON数据。</p>
+<ul>
+<li><h4 id="JSON-API中获得的数据展现到HTML页面中"><a href="#JSON-API中获得的数据展现到HTML页面中" class="headerlink" title="JSON API中获得的数据展现到HTML页面中"></a>JSON API中获得的数据展现到HTML页面中</h4></li>
+</ul>
+<p>这里，我们使用<code>.forEach()</code>函数来循环遍历JSON数据写到htmll变量中。</p>
+<p>首先我们定义一个HTML变量，<br><code>var html = &quot;&quot;;</code> 。</p>
+<p>然后，我们使用<code>.forEach()</code>函数来循环遍历JSON数据写到html变量中，最后把html变量显示到我们的页面中。</p>
+<p>整个过程的代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">json.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">val</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> keys = <span class="built_in">Object</span>.keys(val);</span><br><span class="line">  html += <span class="string">"&lt;div class = 'cat'&gt;"</span>;</span><br><span class="line">  keys.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">key</span>) </span>&#123;</span><br><span class="line">    html += <span class="string">"&lt;b&gt;"</span> + key + <span class="string">"&lt;/b&gt;: "</span> + val[key] + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">  html += <span class="string">"&lt;/div&gt;&lt;br&gt;"</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>提示：示例中难点在于两个forEach循环，而且里面夹杂有字符串拼接，这是最头疼也最容易出错的地方。</p>
+<ul>
+<li><h4 id="上节获得的JSON数组中，每个对象都包含了一个以imageLink为键-key-，以猫的图片的url为值-value-的键值对。"><a href="#上节获得的JSON数组中，每个对象都包含了一个以imageLink为键-key-，以猫的图片的url为值-value-的键值对。" class="headerlink" title="上节获得的JSON数组中，每个对象都包含了一个以imageLink为键(key)，以猫的图片的url为值(value)的键值对。"></a>上节获得的JSON数组中，每个对象都包含了一个以<code>imageLink</code>为键(key)，以猫的图片的url为值(value)的键值对。</h4></li>
+</ul>
+<p>当我们在遍历这些对象时，我们用<code>imageLink</code>的属性来显示<code>img</code>元素的图片。</p>
+<p>代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">html += <span class="string">"&lt;img src = '"</span> + val.imageLink + <span class="string">"'&gt;"</span>;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">  $(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    $(<span class="string">"#getMessage"</span>).on(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      $.getJSON(<span class="string">"/json/cats.json"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">json</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> html = <span class="string">""</span>;</span><br><span class="line"></span><br><span class="line">        json.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">val</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">          html += <span class="string">"&lt;div class = 'cat'&gt;"</span>;</span><br><span class="line"></span><br><span class="line">          <span class="comment">// 请把你的代码写在这条注释以下</span></span><br><span class="line">          </span><br><span class="line">          html += <span class="string">"&lt;img src = '"</span> + val.imageLink + <span class="string">"'&gt;"</span>;</span><br><span class="line">          </span><br><span class="line">          <span class="comment">// 请把你的代码写在这条注释以上</span></span><br><span class="line"></span><br><span class="line">          html += <span class="string">"&lt;/div&gt;"</span>;</span><br><span class="line"></span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        $(<span class="string">".message"</span>).html(html);</span><br><span class="line"></span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&lt;div class="container-fluid"&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class = "row text-center"&gt;</span></span><br><span class="line"><span class="regexp">    &lt;h2&gt;Cat Photo Finder&lt;/</span>h2&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class = "row text-center"&gt;</span></span><br><span class="line"><span class="regexp">    &lt;div class = "col-xs-12 well message"&gt;</span></span><br><span class="line"><span class="regexp">      The message will go here</span></span><br><span class="line"><span class="regexp">    &lt;/</span>div&gt;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;div class = "row text-center"&gt;</span></span><br><span class="line"><span class="regexp">    &lt;div class = "col-xs-12"&gt;</span></span><br><span class="line"><span class="regexp">      &lt;button id = "getMessage" class = "btn btn-primary"&gt;</span></span><br><span class="line"><span class="regexp">        Get Message</span></span><br><span class="line"><span class="regexp">      &lt;/</span>button&gt;</span><br><span class="line">    &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">  &lt;/</span>div&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -505,7 +561,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#Learn-how-Script-Tags-and-Document-Ready-Work"><span class="toc-number">1.</span> <span class="toc-text">Learn how Script Tags and Document Ready Work</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-HTML-Elements-with-Selectors-Using-jQuery"><span class="toc-number">2.</span> <span class="toc-text">Target HTML Elements with Selectors Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-Elements-by-Class-Using-jQuery"><span class="toc-number">3.</span> <span class="toc-text">Target Elements by Class Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-Elements-by-ID-Using-jQuery"><span class="toc-number">4.</span> <span class="toc-text">Target Elements by ID Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Delete-your-jQuery-Functions"><span class="toc-number">5.</span> <span class="toc-text">Delete your jQuery Functions</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-the-same-element-with-multiple-jQuery-Selectors"><span class="toc-number">6.</span> <span class="toc-text">Target the same element with multiple jQuery Selectors</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Remove-classes-from-an-element-with-jQuery"><span class="toc-number">7.</span> <span class="toc-text">Remove classes from an element with jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Change-the-CSS-of-an-Element-Using-jQuery"><span class="toc-number">8.</span> <span class="toc-text">Change the CSS of an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Disable-an-Element-Using-jQuery"><span class="toc-number">9.</span> <span class="toc-text">Disable an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Change-Text-Inside-an-Element-Using-jQuery"><span class="toc-number">10.</span> <span class="toc-text">Change Text Inside an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Remove-an-Element-Using-jQuery"><span class="toc-number">11.</span> <span class="toc-text">Remove an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Use-appendTo-to-Move-Elements-with-jQuery"><span class="toc-number">12.</span> <span class="toc-text">Use appendTo to Move Elements with jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Clone-an-Element-Using-jQuery"><span class="toc-number">13.</span> <span class="toc-text">Clone an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-the-Parent-of-an-Element-Using-jQuery"><span class="toc-number">14.</span> <span class="toc-text">Target the Parent of an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-the-Children-of-an-Element-Using-jQuery"><span class="toc-number">15.</span> <span class="toc-text">Target the Children of an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-a-Specific-Child-of-an-Element-Using-jQuery"><span class="toc-number">16.</span> <span class="toc-text">*Target a Specific Child of an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-Even-Numbered-Elements-Using-jQuery"><span class="toc-number">17.</span> <span class="toc-text">Target Even Numbered Elements Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Use-jQuery-to-Modify-the-Entire-Page"><span class="toc-number">18.</span> <span class="toc-text">Use jQuery to Modify the Entire Page</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、基础知识"><span class="toc-number">1.</span> <span class="toc-text">一、基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Learn-how-Script-Tags-and-Document-Ready-Work"><span class="toc-number">1.1.</span> <span class="toc-text">Learn how Script Tags and Document Ready Work</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-HTML-Elements-with-Selectors-Using-jQuery"><span class="toc-number">1.2.</span> <span class="toc-text">Target HTML Elements with Selectors Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-Elements-by-Class-Using-jQuery"><span class="toc-number">1.3.</span> <span class="toc-text">Target Elements by Class Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-Elements-by-ID-Using-jQuery"><span class="toc-number">1.4.</span> <span class="toc-text">Target Elements by ID Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Delete-your-jQuery-Functions"><span class="toc-number">1.5.</span> <span class="toc-text">Delete your jQuery Functions</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-the-same-element-with-multiple-jQuery-Selectors"><span class="toc-number">1.6.</span> <span class="toc-text">Target the same element with multiple jQuery Selectors</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Remove-classes-from-an-element-with-jQuery"><span class="toc-number">1.7.</span> <span class="toc-text">Remove classes from an element with jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Change-the-CSS-of-an-Element-Using-jQuery"><span class="toc-number">1.8.</span> <span class="toc-text">Change the CSS of an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Disable-an-Element-Using-jQuery"><span class="toc-number">1.9.</span> <span class="toc-text">Disable an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Change-Text-Inside-an-Element-Using-jQuery"><span class="toc-number">1.10.</span> <span class="toc-text">Change Text Inside an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Remove-an-Element-Using-jQuery"><span class="toc-number">1.11.</span> <span class="toc-text">Remove an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Use-appendTo-to-Move-Elements-with-jQuery"><span class="toc-number">1.12.</span> <span class="toc-text">Use appendTo to Move Elements with jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Clone-an-Element-Using-jQuery"><span class="toc-number">1.13.</span> <span class="toc-text">Clone an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-the-Parent-of-an-Element-Using-jQuery"><span class="toc-number">1.14.</span> <span class="toc-text">Target the Parent of an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-the-Children-of-an-Element-Using-jQuery"><span class="toc-number">1.15.</span> <span class="toc-text">Target the Children of an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-a-Specific-Child-of-an-Element-Using-jQuery"><span class="toc-number">1.16.</span> <span class="toc-text">*Target a Specific Child of an Element Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Target-Even-Numbered-Elements-Using-jQuery"><span class="toc-number">1.17.</span> <span class="toc-text">Target Even Numbered Elements Using jQuery</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Use-jQuery-to-Modify-the-Entire-Page"><span class="toc-number">1.18.</span> <span class="toc-text">Use jQuery to Modify the Entire Page</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、jQuery应用举例"><span class="toc-number">2.</span> <span class="toc-text">二、jQuery应用举例</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#通过jQuery来绑定点击事件"><span class="toc-number">2.1.</span> <span class="toc-text">通过jQuery来绑定点击事件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#通过点击事件来更改文本"><span class="toc-number">2.2.</span> <span class="toc-text">通过点击事件来更改文本</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#应用程序接口-API"><span class="toc-number">2.3.</span> <span class="toc-text">应用程序接口(API)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#JSON-API中获得的数据展现到HTML页面中"><span class="toc-number">2.4.</span> <span class="toc-text">JSON API中获得的数据展现到HTML页面中</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#上节获得的JSON数组中，每个对象都包含了一个以imageLink为键-key-，以猫的图片的url为值-value-的键值对。"><span class="toc-number">2.5.</span> <span class="toc-text">上节获得的JSON数组中，每个对象都包含了一个以imageLink为键(key)，以猫的图片的url为值(value)的键值对。</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -638,11 +694,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
+                <a href="javascript:void(0)" class="js-tag color1">React</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">面向对象，数组，字符串</a>
+                <a href="javascript:void(0)" class="js-tag color2">概念，JSX</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -666,6 +722,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">面向对象，数组，字符串</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
               </li>
              
@@ -682,19 +754,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">基础语法</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">相关问题记录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
             
             <div class="clearfix"></div>
