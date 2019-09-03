@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>JavaScript知识点杂记 | Jean_Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="如果文章无法上传，可能是tags后面的冒号没有加空格！！ 一、Javascript中Math.max.apply和Math.max的区别Javascript中的Math.max方法可以求出给定参数中最大的数。 1234Math.max(&apos;1&apos;,&apos;2&apos;,&apos;3.1&apos;,&apos;3.2&apos;)&amp;lt; 3.2Math.min(1,0,-1)&amp;lt; -1  但如果是数组，就不能这样调用了。 此时就用到了apply方">
+  <meta name="description" content="如果文章无法上传，可能是tags后面的冒号没有加空格！！ 一、Javascript中Math.max.apply和Math.max的区别Javascript中的Math.max方法可以求出给定参数中最大的数。 1234Math.max(&apos;1&apos;,&apos;2&apos;,&apos;3.1&apos;,&apos;3.2&apos;)&amp;lt; 3.2Math.min(1,0,-1)&amp;lt; -1  但如果是数组，就不能这样调用了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript知识点杂记">
 <meta property="og:url" content="http://yoursite.com/2019/08/26/JavaScript知识点杂记/index.html">
 <meta property="og:site_name" content="Jean_Blog">
-<meta property="og:description" content="如果文章无法上传，可能是tags后面的冒号没有加空格！！ 一、Javascript中Math.max.apply和Math.max的区别Javascript中的Math.max方法可以求出给定参数中最大的数。 1234Math.max(&apos;1&apos;,&apos;2&apos;,&apos;3.1&apos;,&apos;3.2&apos;)&amp;lt; 3.2Math.min(1,0,-1)&amp;lt; -1  但如果是数组，就不能这样调用了。 此时就用到了apply方">
+<meta property="og:description" content="如果文章无法上传，可能是tags后面的冒号没有加空格！！ 一、Javascript中Math.max.apply和Math.max的区别Javascript中的Math.max方法可以求出给定参数中最大的数。 1234Math.max(&apos;1&apos;,&apos;2&apos;,&apos;3.1&apos;,&apos;3.2&apos;)&amp;lt; 3.2Math.min(1,0,-1)&amp;lt; -1  但如果是数组，就不能这样调用了。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-27T09:38:42.105Z">
+<meta property="og:updated_time" content="2019-09-03T14:13:04.093Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript知识点杂记">
-<meta name="twitter:description" content="如果文章无法上传，可能是tags后面的冒号没有加空格！！ 一、Javascript中Math.max.apply和Math.max的区别Javascript中的Math.max方法可以求出给定参数中最大的数。 1234Math.max(&apos;1&apos;,&apos;2&apos;,&apos;3.1&apos;,&apos;3.2&apos;)&amp;lt; 3.2Math.min(1,0,-1)&amp;lt; -1  但如果是数组，就不能这样调用了。 此时就用到了apply方">
+<meta name="twitter:description" content="如果文章无法上传，可能是tags后面的冒号没有加空格！！ 一、Javascript中Math.max.apply和Math.max的区别Javascript中的Math.max方法可以求出给定参数中最大的数。 1234Math.max(&apos;1&apos;,&apos;2&apos;,&apos;3.1&apos;,&apos;3.2&apos;)&amp;lt; 3.2Math.min(1,0,-1)&amp;lt; -1  但如果是数组，就不能这样调用了。">
   
     <link rel="alternative" href="/atom.xml" title="Jean_Blog" type="application/atom+xml">
   
@@ -223,6 +223,8 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.max(<span class="string">'1'</span>,<span class="string">'2'</span>,<span class="string">'3.1'</span>,<span class="string">'3.2'</span>)</span><br><span class="line">&lt; <span class="number">3.2</span></span><br><span class="line"><span class="built_in">Math</span>.min(<span class="number">1</span>,<span class="number">0</span>,<span class="number">-1</span>)</span><br><span class="line">&lt; <span class="number">-1</span></span><br></pre></td></tr></table></figure>
 
 <p>但如果是数组，就不能这样调用了。</p>
+<a id="more"></a>
+
 <p>此时就用到了apply方法：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">apply 方法 (<span class="built_in">Function</span>) (JavaScript)</span><br><span class="line"></span><br><span class="line">调用函数，并用指定对象替换函数的 <span class="keyword">this</span> 值，同时用指定数组替换函数的参数。</span><br><span class="line"></span><br><span class="line">apply([thisObj[,argArray]])</span><br><span class="line">thisObj</span><br><span class="line">　　可选。 要用作 <span class="keyword">this</span> 对象的对象。</span><br><span class="line">argArray</span><br><span class="line">　　可选。 要传递到函数的一组参数。</span><br></pre></td></tr></table></figure>
 
@@ -535,7 +537,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">面向对象，数组，字符串</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -552,22 +570,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">语法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">面向对象，数组，字符串</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
