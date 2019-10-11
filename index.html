@@ -191,14 +191,10 @@
 	
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="一、灵活运用css-flex-1"><a href="#一、灵活运用css-flex-1" class="headerlink" title="一、灵活运用css flex:1;"></a>一、灵活运用css flex:1;</h3><p><img src="/2019/10/11/vue去哪儿网项目疑难点/1.png" alt></p>
-<p>以下说明参照上图：</p>
-<p>假设<strong>a</strong>是父组件，用flex布局设置子控件左右居中。</p>
-<p><strong>b</strong>是子控件，居左。width：150px;</p>
-<p><strong>c</strong>是子控件，居右。width不给，设置flex：1；</p>
-<p>则</p>
-<p><strong>c</strong>.width = <strong>a</strong>.width-(<strong>a</strong>的margin和padding[左右])-<strong>b</strong>.width–(<strong>b</strong>的margin和padding[左右])-(<strong>c</strong>的margin和padding[左右])</p>
-
+        <p>慕课网vue全家桶项目开发课程学习过程中遇到的没有理解的相关问题记录，增加记忆并以备后续查找复习。</p>
+        
+          <a class="article-more-a" href="/2019/10/11/vue去哪儿网项目疑难点/#more">more >></a>
+        
       
 
 
@@ -262,7 +258,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/08/vue全家桶使用方法/">vue全家桶使用方法</a>
+      <a class="article-title" href="/2019/10/08/vue全家桶使用方法/">vue全家桶及项目架构(使用方法)</a>
     </h1>
   
 
@@ -282,24 +278,10 @@
 	
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="vue全家桶及项目架构"><a href="#vue全家桶及项目架构" class="headerlink" title="vue全家桶及项目架构"></a>vue全家桶及项目架构</h2><p>Vue有著名的全家桶系列，包含了vue-router（<a href="http://router.vuejs.org/" target="_blank" rel="noopener">http://router.vuejs.org</a>），vuex（<a href="http://vuex.vuejs.org/" target="_blank" rel="noopener">http://vuex.vuejs.org</a>）， vue-resource（<a href="https://github.com/pagekit/vue-resource）。再加上构建工具vue-cli，就是一个完整的vue项目的核心构成。" target="_blank" rel="noopener">https://github.com/pagekit/vue-resource）。再加上构建工具vue-cli，就是一个完整的vue项目的核心构成。</a></p>
-<h3 id="一、vue-cli构建工具"><a href="#一、vue-cli构建工具" class="headerlink" title="一、vue-cli构建工具"></a>一、vue-cli构建工具</h3><p><img src="/2019/10/08/vue全家桶使用方法/1.png" alt></p>
-<h3 id="二、vue中的动画效果"><a href="#二、vue中的动画效果" class="headerlink" title="二、vue中的动画效果"></a>二、vue中的动画效果</h3><h4 id="1-transition过渡"><a href="#1-transition过渡" class="headerlink" title="1.transition过渡"></a>1.transition过渡</h4><p><strong>&lt; transition name=”xxx”&gt;</strong></p>
-<p><strong>&lt; /transition&gt;</strong></p>
-<p> .xxx-enter</p>
-<p> .xxx-enter-active</p>
-<p>.xxx-leave-to</p>
-<p>.xxx-leave-active</p>
-<h4 id="2-keyframes等css动画"><a href="#2-keyframes等css动画" class="headerlink" title="2.@keyframes等css动画"></a>2.@keyframes等css动画</h4><h4 id="3-animate-css库"><a href="#3-animate-css库" class="headerlink" title="3.animate.css库"></a>3.animate.css库</h4><p>引入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt; link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./animate.css&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt; transtion  </span><br><span class="line"></span><br><span class="line">	name=&quot;xxx&quot;</span><br><span class="line"></span><br><span class="line">	enter-active-class=&quot;animated shake&quot;</span><br><span class="line"></span><br><span class="line">	leave-active-class=&quot;animated swing&quot;</span><br><span class="line"></span><br><span class="line"> &gt;</span><br><span class="line"></span><br><span class="line">&lt;/transition&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="4-如何同时使用动画和过渡"><a href="#4-如何同时使用动画和过渡" class="headerlink" title="4.如何同时使用动画和过渡"></a>4.如何同时使用动画和过渡</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt; link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./animate.css&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt; transtion  </span><br><span class="line"></span><br><span class="line">	type=&quot;transition&quot; //动画播放时长以transition时长为准</span><br><span class="line">	:duration=&quot;10000&quot; //动画播放十秒</span><br><span class="line">	:duration=&quot;&#123;enter:10000,leave:5000&#125;&quot;</span><br><span class="line">	</span><br><span class="line">	name=&quot;xxx&quot;</span><br><span class="line"></span><br><span class="line">	enter-active-class=&quot;animated shake&quot;</span><br><span class="line"></span><br><span class="line">	leave-active-class=&quot;animated swing&quot;</span><br><span class="line"></span><br><span class="line"> &gt;</span><br><span class="line"></span><br><span class="line">&lt;/transition&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="5-vue中的js动画"><a href="#5-vue中的js动画" class="headerlink" title="5.vue中的js动画"></a>5.vue中的js动画</h4><p><strong>velocity.js库</strong></p>
-<p>@绑定动作函数</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">函数里Velocity(el,&#123;opacity:1&#125;,&#123;duration:1000,complete:done&#125;)</span><br></pre></td></tr></table></figure>
-
-
+        <p>Vue有著名的全家桶系列，包含了vue-router（<a href="http://router.vuejs.org/" target="_blank" rel="noopener">http://router.vuejs.org</a>），vuex（<a href="http://vuex.vuejs.org/" target="_blank" rel="noopener">http://vuex.vuejs.org</a>）， vue-resource（<a href="https://github.com/pagekit/vue-resource）。再加上构建工具vue-cli，就是一个完整的vue项目的核心构成。" target="_blank" rel="noopener">https://github.com/pagekit/vue-resource）。再加上构建工具vue-cli，就是一个完整的vue项目的核心构成。</a></p>
+        
+          <a class="article-more-a" href="/2019/10/08/vue全家桶使用方法/#more">more >></a>
+        
       
 
 
@@ -1032,10 +1014,10 @@
 	
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="href与src的区别"><a href="#href与src的区别" class="headerlink" title="href与src的区别"></a>href与src的区别</h2><p>​    href(hypertext reference)指超文本引用，表示当前页面引用了别处的内容</p>
-<p>　src(source)表示来源地址，表示把别处的内容引入到当前页面</p>
-<p>　所以231231&lt; img &gt;、&lt; script &gt;、&lt; iframe &gt;等应该使用src，而&lt; a &gt;和&lt; map &gt;应该使用href</p>
-<h3 id="如何实现水平居中"><a href="#如何实现水平居中" class="headerlink" title="如何实现水平居中"></a>如何实现水平居中</h3><h3 id="如何实现垂直居中"><a href="#如何实现垂直居中" class="headerlink" title="如何实现垂直居中"></a>如何实现垂直居中</h3>
+        <h2 id="href与src的区别"><a href="#href与src的区别" class="headerlink" title="href与src的区别"></a>href与src的区别</h2><p>涉及到样式的细节知识点分析的记录。</p>
+        
+          <a class="article-more-a" href="/2019/08/22/HTML&css知识点杂记/#more">more >></a>
+        
       
 
 
@@ -1185,6 +1167,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">错题，js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">javascript</a>
               </li>
              
@@ -1198,18 +1184,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">概念，JSX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">vue-cli</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">错题，js</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1230,6 +1204,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">语法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">vue-cli</a>
               </li>
              
               <li class="article-tag-list-item">
