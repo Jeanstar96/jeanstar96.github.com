@@ -164,6 +164,202 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-vue去哪儿网项目疑难点" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/11/vue去哪儿网项目疑难点/">vue去哪儿网项目疑难点</a>
+    </h1>
+  
+
+        
+        
+
+<a href="/2019/10/11/vue去哪儿网项目疑难点/" class="archive-article-date">
+  	<time datetime="2019-10-11T02:06:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-11</time>
+</a>
+        
+          
+          
+		
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一、灵活运用css-flex-1"><a href="#一、灵活运用css-flex-1" class="headerlink" title="一、灵活运用css flex:1;"></a>一、灵活运用css flex:1;</h3><p><img src="https://upload-images.jianshu.io/upload_images/3132809-f72d60f6785c5ca8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/936/format/webp" alt="img"></p>
+<p>以下说明参照上图：</p>
+<p>假设<strong>a</strong>是父组件，用flex布局设置子控件左右居中。</p>
+<p><strong>b</strong>是子控件，居左。width：150px;</p>
+<p><strong>c</strong>是子控件，居右。width不给，设置flex：1；</p>
+<p>则</p>
+<p><strong>c</strong>.width = <strong>a</strong>.width-(<strong>a</strong>的margin和padding[左右])-<strong>b</strong>.width–(<strong>b</strong>的margin和padding[左右])-(<strong>c</strong>的margin和padding[左右])</p>
+
+      
+
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">代码问题，vue</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/11/vue去哪儿网项目疑难点/">Read More--&gt; >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+  
+    <article id="post-vue全家桶使用方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/08/vue全家桶使用方法/">vue全家桶使用方法</a>
+    </h1>
+  
+
+        
+        
+
+<a href="/2019/10/08/vue全家桶使用方法/" class="archive-article-date">
+  	<time datetime="2019-10-08T07:24:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-08</time>
+</a>
+        
+          
+          
+		
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="vue全家桶及项目架构"><a href="#vue全家桶及项目架构" class="headerlink" title="vue全家桶及项目架构"></a>vue全家桶及项目架构</h2><p>Vue有著名的全家桶系列，包含了vue-router（<a href="http://router.vuejs.org/" target="_blank" rel="noopener">http://router.vuejs.org</a>），vuex（<a href="http://vuex.vuejs.org/" target="_blank" rel="noopener">http://vuex.vuejs.org</a>）， vue-resource（<a href="https://github.com/pagekit/vue-resource）。再加上构建工具vue-cli，就是一个完整的vue项目的核心构成。" target="_blank" rel="noopener">https://github.com/pagekit/vue-resource）。再加上构建工具vue-cli，就是一个完整的vue项目的核心构成。</a></p>
+<h3 id="一、vue-cli构建工具"><a href="#一、vue-cli构建工具" class="headerlink" title="一、vue-cli构建工具"></a>一、vue-cli构建工具</h3><p><img src="/2019/10/08/vue全家桶使用方法/1.png" alt></p>
+<h3 id="二、vue中的动画效果"><a href="#二、vue中的动画效果" class="headerlink" title="二、vue中的动画效果"></a>二、vue中的动画效果</h3><h4 id="1-transition过渡"><a href="#1-transition过渡" class="headerlink" title="1.transition过渡"></a>1.transition过渡</h4><p><strong>&lt; transition name=”xxx”&gt;</strong></p>
+<p><strong>&lt; /transition&gt;</strong></p>
+<p> .xxx-enter</p>
+<p> .xxx-enter-active</p>
+<p>.xxx-leave-to</p>
+<p>.xxx-leave-active</p>
+<h4 id="2-keyframes等css动画"><a href="#2-keyframes等css动画" class="headerlink" title="2.@keyframes等css动画"></a>2.@keyframes等css动画</h4><h4 id="3-animate-css库"><a href="#3-animate-css库" class="headerlink" title="3.animate.css库"></a>3.animate.css库</h4><p>引入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt; link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./animate.css&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt; transtion  </span><br><span class="line"></span><br><span class="line">	name=&quot;xxx&quot;</span><br><span class="line"></span><br><span class="line">	enter-active-class=&quot;animated shake&quot;</span><br><span class="line"></span><br><span class="line">	leave-active-class=&quot;animated swing&quot;</span><br><span class="line"></span><br><span class="line"> &gt;</span><br><span class="line"></span><br><span class="line">&lt;/transition&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-如何同时使用动画和过渡"><a href="#4-如何同时使用动画和过渡" class="headerlink" title="4.如何同时使用动画和过渡"></a>4.如何同时使用动画和过渡</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt; link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./animate.css&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt; transtion  </span><br><span class="line"></span><br><span class="line">	type=&quot;transition&quot; //动画播放时长以transition时长为准</span><br><span class="line">	:duration=&quot;10000&quot; //动画播放十秒</span><br><span class="line">	:duration=&quot;&#123;enter:10000,leave:5000&#125;&quot;</span><br><span class="line">	</span><br><span class="line">	name=&quot;xxx&quot;</span><br><span class="line"></span><br><span class="line">	enter-active-class=&quot;animated shake&quot;</span><br><span class="line"></span><br><span class="line">	leave-active-class=&quot;animated swing&quot;</span><br><span class="line"></span><br><span class="line"> &gt;</span><br><span class="line"></span><br><span class="line">&lt;/transition&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-vue中的js动画"><a href="#5-vue中的js动画" class="headerlink" title="5.vue中的js动画"></a>5.vue中的js动画</h4><p><strong>velocity.js库</strong></p>
+<p>@绑定动作函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">函数里Velocity(el,&#123;opacity:1&#125;,&#123;duration:1000,complete:done&#125;)</span><br></pre></td></tr></table></figure>
+
+
+      
+
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">vue-cli</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/08/vue全家桶使用方法/">Read More--&gt; >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+  
     <article id="post-前端模块1：css-js实现返回顶部功能" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -191,7 +387,7 @@
 	
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="功能模块：css-js实现返回顶部功能"><a href="#功能模块：css-js实现返回顶部功能" class="headerlink" title="功能模块：css+js实现返回顶部功能"></a>功能模块：css+js实现返回顶部功能</h1><h3 id="功能描述："><a href="#功能描述：" class="headerlink" title="功能描述："></a>功能描述：</h3><p>​       主要是通过css+js实现网页中的【返回顶部】功能。</p>
+        <h3 id="功能描述："><a href="#功能描述：" class="headerlink" title="功能描述："></a>功能描述：</h3><p>​       主要是通过css+js实现网页中的【返回顶部】功能。</p>
         
           <a class="article-more-a" href="/2019/09/12/前端模块1：css-js实现返回顶部功能/#more">more >></a>
         
@@ -394,11 +590,11 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">项目</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">项目</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
         		</li>
       		
 		</ul>
@@ -885,213 +1081,6 @@
 
 
   
-    <article id="post-jQuery" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/21/jQuery/">jQuery</a>
-    </h1>
-  
-
-        
-        
-
-<a href="/2019/08/21/jQuery/" class="archive-article-date">
-  	<time datetime="2019-08-21T01:58:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-21</time>
-</a>
-        
-          
-          
-		
-		
-      </header>
-    
-	
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一、基础知识"><a href="#一、基础知识" class="headerlink" title="一、基础知识"></a>一、基础知识</h3><h4 id="Learn-how-Script-Tags-and-Document-Ready-Work"><a href="#Learn-how-Script-Tags-and-Document-Ready-Work" class="headerlink" title="Learn how Script Tags and Document Ready Work"></a>Learn how Script Tags and Document Ready Work</h4><p>现在让我们开始学习最流行的JavaScript库jQuery吧，不用担心JavaScript本身，我们稍后会提到它。</p>
-<p>在开始学习使用jQuery之前，我们需要加一些代码到HTML文件中。</p>
-        
-          <a class="article-more-a" href="/2019/08/21/jQuery/#more">more >></a>
-        
-      
-
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jQuery</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">freeCodeCamp</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/21/jQuery/">Read More--&gt; >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-
-  
-    <article id="post-html-css-bootstrap" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/21/html-css-bootstrap/">html+css+bootstrap</a>
-    </h1>
-  
-
-        
-        
-
-<a href="/2019/08/21/html-css-bootstrap/" class="archive-article-date">
-  	<time datetime="2019-08-21T01:20:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-21</time>
-</a>
-        
-          
-          
-		
-		
-      </header>
-    
-	
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="Create-a-Bootstrap-Headline"><a href="#Create-a-Bootstrap-Headline" class="headerlink" title="Create a Bootstrap Headline"></a>Create a Bootstrap Headline</h4><hr>
-<p>现在，让我们从头开始练习我们的HTML, CSS 和 Bootstrap 技术。</p>
-<p>我们将会搭建一个 jQuery playground，它也即将在我们接下来的 jQuery 课程中被投入使用。</p>
-<p>首先，创建一个 <code>h3</code> 元素，并且包含文本内容 <code>jQuery Playground</code> 。</p>
-<p>在 <code>h3</code> 元素中设置 Bootstrap 的 class 属性 <code>text-primary</code> 为其上色，同时增加 Bootstrap 的 class 属性 <code>text-center</code> 使文本居中显示。</p>
-        
-          <a class="article-more-a" href="/2019/08/21/html-css-bootstrap/#more">more >></a>
-        
-      
-
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">bootstrap</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/21/html-css-bootstrap/">Read More--&gt; >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -1196,10 +1185,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">错题，js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">javascript</a>
               </li>
              
@@ -1208,11 +1193,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">错题，js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">代码问题，vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">React</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">概念，JSX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">vue-cli</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1225,6 +1226,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1241,10 +1246,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">语法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
               </li>
              
               <li class="article-tag-list-item">
