@@ -17,7 +17,9 @@
 <meta property="og:description" content="慕课网vue全家桶项目开发课程学习过程中遇到的没有理解的相关问题记录，增加记忆并以备后续查找复习。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/10/11/vue去哪儿网项目疑难点/1.png">
-<meta property="og:updated_time" content="2019-10-11T02:33:23.978Z">
+<meta property="og:image" content="http://yoursite.com/2019/10/11/vue去哪儿网项目疑难点/2.png">
+<meta property="og:image" content="http://yoursite.com/2019/10/11/vue去哪儿网项目疑难点/D:%5Cweb%5CBlog%5Chexo%5Csource_posts%5Cvue%E5%8E%BB%E5%93%AA%E5%84%BF%E7%BD%91%E9%A1%B9%E7%9B%AE%E7%96%91%E9%9A%BE%E7%82%B9%5C3.png">
+<meta property="og:updated_time" content="2019-10-11T10:21:11.821Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue去哪儿网项目疑难点">
 <meta name="twitter:description" content="慕课网vue全家桶项目开发课程学习过程中遇到的没有理解的相关问题记录，增加记忆并以备后续查找复习。">
@@ -195,7 +197,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">126字</span>
+        <span class="post-count">870字</span>
       </span>
     </span>
 
@@ -204,7 +206,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
+        <span class="post-count">3分</span>
       </span>
     </span>
 </div>
@@ -231,6 +233,49 @@
 <p><strong>c</strong>是子控件，居右。width不给，设置flex：1；</p>
 <p>则</p>
 <p><strong>c</strong>.width = <strong>a</strong>.width-(<strong>a</strong>的margin和padding[左右])-<strong>b</strong>.width–(<strong>b</strong>的margin和padding[左右])-(<strong>c</strong>的margin和padding[左右])</p>
+<h3 id="二、rem与font-size关系"><a href="#二、rem与font-size关系" class="headerlink" title="二、rem与font-size关系"></a>二、rem与font-size关系</h3><p>1rem=html font-size=50px（默认reset.css设置成50px）</p>
+<p>先查看reset.css文件里的html里面的font-size设置成了多少px，按比例变化</p>
+<h3 id="三、如何在import引用时简写路径"><a href="#三、如何在import引用时简写路径" class="headerlink" title="三、如何在import引用时简写路径"></a>三、如何在import引用时简写路径</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//样式里面引用样式需要在import前面加@符号，如果找src目录可以用@代表，前面再加个~符号</span><br><span class="line">@import &apos;~@/assets/styles/varibles.styl&apos;</span><br></pre></td></tr></table></figure>
+
+<p>../build/webpack.base.conf.js文件里第30+行有如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">resolve: &#123;</span><br><span class="line">    extensions: [&apos;.js&apos;, &apos;.vue&apos;, &apos;.json&apos;],</span><br><span class="line">    alias: &#123;</span><br><span class="line">      &apos;vue$&apos;: &apos;vue/dist/vue.esm.js&apos;,</span><br><span class="line">      &apos;@&apos;: resolve(&apos;src&apos;),</span><br><span class="line">      //类似可以如下自定义一个路径替代名称</span><br><span class="line">      &apos;style&apos;:resolve(&apos;src/assets/styles&apos;),</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+<p>定义完之后就可以把下面的代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import &apos;./assets/styles/reset.css&apos;</span><br><span class="line">import &apos;./assets/styles/border.css&apos;</span><br><span class="line">import &apos;./assets/styles/iconfont.css&apos;</span><br><span class="line"></span><br><span class="line">@import &apos;~@/assets/styles/varibles.styl&apos;</span><br></pre></td></tr></table></figure>
+
+<p>改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import &apos;style/reset.css&apos;</span><br><span class="line">import &apos;style/border.css&apos;</span><br><span class="line">import &apos;style/iconfont.css&apos;</span><br><span class="line"></span><br><span class="line">@import &apos;~style/varibles.styl&apos;</span><br></pre></td></tr></table></figure>
+
+<p>注意！：修改了webpack.base.conf.js的配置项之后需要重启服务器，否则会报错。</p>
+<p>重新npm run start即可！</p>
+<h3 id="四、如何用-styl文件定义变量"><a href="#四、如何用-styl文件定义变量" class="headerlink" title="四、如何用.styl文件定义变量"></a>四、如何用.styl文件定义变量</h3><p>在定义颜色的时候可以把颜色赋值给一个新名字，这样系统更改主题颜色就不需要去代码里一处处改颜色了。</p>
+<p>例如：</p>
+<p>样式里的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background: #00bcd4;</span><br></pre></td></tr></table></figure>
+
+<p>在./src/assets/styles文件夹下新建文件varibles.styl文件，文件里就可以定义变量代表颜色：格式是用$符号加变量名称</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$bgcolor = #00bcd4</span><br></pre></td></tr></table></figure>
+
+<p>在该文件下定义完成后，可以把上面的样式里颜色修改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background: $bgcolor;</span><br></pre></td></tr></table></figure>
+
+<h3 id="五、如何引入iconfont图标"><a href="#五、如何引入iconfont图标" class="headerlink" title="五、如何引入iconfont图标"></a>五、如何引入iconfont图标</h3><p>去<a href="https://www.iconfont.cn/" target="_blank" rel="noopener">iconfont网站</a>，将需要用的图标加入购物车，然后添加至项目，在项目页面下点击下载至本地（下载必须用浏览器自带的下载功能，不可以用迅雷等下载工具），在本地解压后，取其中的四个文件放入iconfont文件夹下面</p>
+<p><img src="/2019/10/11/vue去哪儿网项目疑难点/2.png" alt></p>
+<p>再把iconfont.css文件放入styles文件夹下</p>
+<p><img src="/2019/10/11/vue去哪儿网项目疑难点/D:%5Cweb%5CBlog%5Chexo%5Csource_posts%5Cvue%E5%8E%BB%E5%93%AA%E5%84%BF%E7%BD%91%E9%A1%B9%E7%9B%AE%E7%96%91%E9%9A%BE%E7%82%B9%5C3.png" alt></p>
+<p>然后在代码里</p>
+<h5 id="1-修改iconfont-css文件里的对应工程的地址"><a href="#1-修改iconfont-css文件里的对应工程的地址" class="headerlink" title="1.修改iconfont.css文件里的对应工程的地址"></a>1.修改iconfont.css文件里的对应工程的地址</h5><p>原本是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">src: url(&apos;iconfont.eot?t=1570777905932&apos;); /* IE9 */</span><br><span class="line">等等几行</span><br></pre></td></tr></table></figure>
+
+<p>改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@font-face &#123;font-family: &quot;iconfont&quot;;</span><br><span class="line">  src: url(&apos;./iconfont/iconfont.eot?t=1570777905932&apos;); /* IE9 */</span><br><span class="line">  src: url(&apos;./iconfont/iconfont.eot?t=1570777905932#iefix&apos;) format(&apos;embedded-opentype&apos;), /* IE6-IE8 */</span><br><span class="line">  </span><br><span class="line">  url(&apos;./iconfont/iconfont.woff?t=1570777905932&apos;) format(&apos;woff&apos;),</span><br><span class="line">  url(&apos;./iconfont/iconfont.ttf?t=1570777905932&apos;) format(&apos;truetype&apos;), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */</span><br><span class="line">  url(&apos;./iconfont/iconfont.svg?t=1570777905932#iconfont&apos;) format(&apos;svg&apos;); /* iOS 4.1- */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>因为这些文件都是放在这个.css文件同级的iconfont文件夹下的，所以要改一下路径。如果文件放在同级则不用修改。</p>
+<h5 id="2-在main-js里引入样式表"><a href="#2-在main-js里引入样式表" class="headerlink" title="2.在main.js里引入样式表"></a>2.在main.js里引入样式表</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &apos;style/iconfont.css&apos;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-在需要用的-vue文件里使用"><a href="#3-在需要用的-vue文件里使用" class="headerlink" title="3.在需要用的.vue文件里使用"></a>3.在需要用的.vue文件里使用</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;header-left&quot;&gt;</span><br><span class="line">      &lt;div class=&quot;iconfont back-icon&quot;&gt;&amp;#xe624;&lt;/div&gt;</span><br><span class="line"> &lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p> &amp; #xe624;是在官网复制的对应的图标代码。</p>
 
       
 
@@ -370,7 +415,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、灵活运用css-flex-1"><span class="toc-number">1.</span> <span class="toc-text">一、灵活运用css flex:1;</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、灵活运用css-flex-1"><span class="toc-number">1.</span> <span class="toc-text">一、灵活运用css flex:1;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、rem与font-size关系"><span class="toc-number">2.</span> <span class="toc-text">二、rem与font-size关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、如何在import引用时简写路径"><span class="toc-number">3.</span> <span class="toc-text">三、如何在import引用时简写路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、如何用-styl文件定义变量"><span class="toc-number">4.</span> <span class="toc-text">四、如何用.styl文件定义变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、如何引入iconfont图标"><span class="toc-number">5.</span> <span class="toc-text">五、如何引入iconfont图标</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-修改iconfont-css文件里的对应工程的地址"><span class="toc-number">5.0.1.</span> <span class="toc-text">1.修改iconfont.css文件里的对应工程的地址</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-在main-js里引入样式表"><span class="toc-number">5.0.2.</span> <span class="toc-text">2.在main.js里引入样式表</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-在需要用的-vue文件里使用"><span class="toc-number">5.0.3.</span> <span class="toc-text">3.在需要用的.vue文件里使用</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -503,10 +548,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">错题，js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
@@ -531,11 +572,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">代码问题，vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">错题，js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">vue-cli</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">功能模块</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -551,27 +608,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">代码问题，vue</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">功能模块</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">项目</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">freeCodeCamp</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -580,6 +617,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">githubpage</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jQuery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">freeCodeCamp</a>
               </li>
              
               <li class="article-tag-list-item">
