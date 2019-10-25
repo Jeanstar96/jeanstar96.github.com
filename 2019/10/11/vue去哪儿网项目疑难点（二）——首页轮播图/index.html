@@ -9,7 +9,7 @@
   <title>vue去哪儿网项目疑难点（二）——首页轮播图 | Jean_Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="慕课网vue全家桶项目开发课程学习过程中遇到的没有理解的相关问题记录，增加记忆并以备后续查找复习——-第二部分（首页轮播图）">
-<meta name="keywords" content="代码问题,vue,项目">
+<meta name="keywords" content="vue,代码问题,项目">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue去哪儿网项目疑难点（二）——首页轮播图">
 <meta property="og:url" content="http://yoursite.com/2019/10/11/vue去哪儿网项目疑难点（二）——首页轮播图/index.html">
@@ -17,7 +17,7 @@
 <meta property="og:description" content="慕课网vue全家桶项目开发课程学习过程中遇到的没有理解的相关问题记录，增加记忆并以备后续查找复习——-第二部分（首页轮播图）">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/10/11/vue去哪儿网项目疑难点（二）——首页轮播图/1.png">
-<meta property="og:updated_time" content="2019-10-12T07:59:28.761Z">
+<meta property="og:updated_time" content="2019-10-14T09:49:10.956Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue去哪儿网项目疑难点（二）——首页轮播图">
 <meta name="twitter:description" content="慕课网vue全家桶项目开发课程学习过程中遇到的没有理解的相关问题记录，增加记忆并以备后续查找复习——-第二部分（首页轮播图）">
@@ -195,7 +195,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">794字</span>
+        <span class="post-count">825字</span>
       </span>
     </span>
 
@@ -204,7 +204,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">3分</span>
+        <span class="post-count">4分</span>
       </span>
     </span>
 </div>
@@ -258,6 +258,10 @@
 
 <p>因为图片宽高比375：100撑开高度，设置height：0</p>
 <p>100/375=26.67%</p>
+<p>比如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">overflow hidden</span><br><span class="line">   width 25%</span><br><span class="line">   height 0</span><br><span class="line">   padding-bottom 25%</span><br></pre></td></tr></table></figure>
+
+<p>撑开是正方形，因为25%/25%=1：1</p>
 <h3 id="三、样式效果实现穿透影响"><a href="#三、样式效果实现穿透影响" class="headerlink" title="三、样式效果实现穿透影响"></a>三、样式效果实现穿透影响</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.wrapper &gt;&gt;&gt; .swiper-pagination-bullet-active</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;符号可实现穿透组件改变组件内部的样式</span><br></pre></td></tr></table></figure>
@@ -267,7 +271,7 @@
 
 <p>此时已经上传到对应分支</p>
 <p>然后需要把这个分支合并至主master</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git checkout master //切换到master分支</span><br><span class="line">git merge origin/index-swiper //把新增的合并到本地master分支</span><br><span class="line">git push //将本地master分支提交到线上</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git checkout master //切换到master分支</span><br><span class="line">git merge origin/index-swiper //把新增的合并到本地master分支（merge融合两个分支）</span><br><span class="line">git push //将本地master分支提交到线上</span><br></pre></td></tr></table></figure>
 
 <p><img src="/2019/10/11/vue去哪儿网项目疑难点（二）——首页轮播图/1.png" alt></p>
 
@@ -310,11 +314,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">代码问题</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">代码问题</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -388,11 +392,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/12/vue去哪儿网项目疑难点（三）——图标区域页面布局/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/10/12/vue去哪儿网项目疑难点（三）——图标区域页面布局及逻辑/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          vue去哪儿网项目疑难点（三）——图标区域页面布局
+          vue去哪儿网项目疑难点（三）——图标区域页面布局及逻辑
         
       </div>
     </a>
@@ -571,6 +575,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">vue-cli</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">React</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">概念，JSX</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">javascript</a>
               </li>
              
@@ -591,19 +611,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">React</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">概念，JSX</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">代码问题</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -616,10 +624,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">vue-cli</a>
               </li>
              
               <li class="article-tag-list-item">
