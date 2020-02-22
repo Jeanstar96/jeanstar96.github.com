@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>项目“2048小游戏” | Jean_Blog</title>
+  <title>实习记录--activated钩子和&lt;keep-alive&gt; | Jean_Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="读2048小游戏程序记录主要在网友开源的代码中记录读代码过程中不太熟悉的接口和属性等，并且整理JS算法思路，进行部分修改。">
-<meta name="keywords" content="html,项目,js">
+  <meta name="description" content="为保证 项目技术重构过程中，主页面缓存需求，使用&amp;lt; keep-alive &amp;gt;，本篇记录其相关用法和优点，实现前进刷新，后退不刷新。">
+<meta name="keywords" content="实习，vue">
 <meta property="og:type" content="article">
-<meta property="og:title" content="项目“2048小游戏”">
-<meta property="og:url" content="http://yoursite.com/2019/09/02/项目“2048小游戏”/index.html">
+<meta property="og:title" content="实习记录--activated钩子和&lt;keep-alive&gt;">
+<meta property="og:url" content="http://yoursite.com/2020/02/22/实习记录-activated钩子和-keep-alive/index.html">
 <meta property="og:site_name" content="Jean_Blog">
-<meta property="og:description" content="读2048小游戏程序记录主要在网友开源的代码中记录读代码过程中不太熟悉的接口和属性等，并且整理JS算法思路，进行部分修改。">
+<meta property="og:description" content="为保证 项目技术重构过程中，主页面缓存需求，使用&amp;lt; keep-alive &amp;gt;，本篇记录其相关用法和优点，实现前进刷新，后退不刷新。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-03T16:59:03.234Z">
+<meta property="og:updated_time" content="2020-02-22T07:45:54.287Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="项目“2048小游戏”">
-<meta name="twitter:description" content="读2048小游戏程序记录主要在网友开源的代码中记录读代码过程中不太熟悉的接口和属性等，并且整理JS算法思路，进行部分修改。">
+<meta name="twitter:title" content="实习记录--activated钩子和&lt;keep-alive&gt;">
+<meta name="twitter:description" content="为保证 项目技术重构过程中，主页面缓存需求，使用&amp;lt; keep-alive &amp;gt;，本篇记录其相关用法和优点，实现前进刷新，后退不刷新。">
   
     <link rel="alternative" href="/atom.xml" title="Jean_Blog" type="application/atom+xml">
   
@@ -164,14 +164,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-项目“2048小游戏”" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-实习记录-activated钩子和-keep-alive" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      项目“2048小游戏”
+      实习记录--activated钩子和&lt;keep-alive&gt;
     </h1>
   
 
@@ -183,8 +183,8 @@
         </span>
 
 
-<a href="/2019/09/02/项目“2048小游戏”/" class="archive-article-date">
-  	<time datetime="2019-09-02T09:19:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-02</time>
+<a href="/2020/02/22/实习记录-activated钩子和-keep-alive/" class="archive-article-date">
+  	<time datetime="2020-02-22T06:53:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-22</time>
 </a>
         
           
@@ -193,7 +193,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1.7k字</span>
+        <span class="post-count">948字</span>
       </span>
     </span>
 
@@ -202,7 +202,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">6分</span>
+        <span class="post-count">3分</span>
       </span>
     </span>
 </div>
@@ -219,79 +219,46 @@
 	
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="读2048小游戏程序记录"><a href="#读2048小游戏程序记录" class="headerlink" title="读2048小游戏程序记录"></a>读2048小游戏程序记录</h2><p>主要在网友开源的代码中记录读代码过程中不太熟悉的接口和属性等，并且整理JS算法思路，进行部分修改。</p>
+        <p>为保证</p>
+<p>项目技术重构过程中，主页面缓存需求，使用&lt; keep-alive &gt;，本篇记录其相关用法和优点，实现前进刷新，后退不刷新。</p>
 <a id="more"></a>
 
-<h3 id="html"><a href="#html" class="headerlink" title=".html"></a>.html</h3><p>margin 属性在一个声明中设置所有外边距属性</p>
-<ol>
-<li><strong>&lt; html lang=”en” &gt;</strong></li>
-</ol>
-<p>//语言是中文，如果不写用谷歌浏览器打开会自动翻译成英文（在设置了自动翻译情况下，一般不写影响不大</p>
-<p>2.<strong>&lt; meta name=”viewport” content=”target-densitydpi=320,width=640,user-scalable=no” charset=”utf-8” http-equiv=”X-UA-Compatible” content=”IE=edge,chrome=1” &gt;</strong></p>
-<p>//target-densitydpi 这个私有属性，它表示目标设备的密度等级，作用是决定css中的1px代表多少物理像素；target-densitydpi 值可以为一个数值或 high-dpi 、 medium-dpi、 low-dpi、 device-dpi 这几个字符串中的一个；特别说明的是，当 target-densitydpi=device-dpi 时，css中的1px会等于物理像素中的1px。<br>因为这个属性只有安卓支持，并且安卓已经决定要废弃 target-densitydpi 这个属性了，尽量避免使用这个属性。</p>
-<p>3.<strong>&lt; link rel=”stylesheet” href=”./2048.css”&gt;</strong></p>
-<p>//rel 属性规定当前文档与被链接文档之间的关系；rel 属性指示被链接的文档是一个样式表；只有 rel 属性的 “stylesheet” 值得到了所有浏览器的支持。其他值只得到了部分地支持。</p>
-<p>4.<strong>&lt; main&gt;标签</strong></p>
-<hr>
-<h3 id="CSS"><a href="#CSS" class="headerlink" title=".CSS"></a>.CSS</h3><ol>
-<li><strong>&lt; style&gt;</strong>标签/CSS</li>
-</ol>
-<p>表示设置<a href="https://www.baidu.com/s?wd=div&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao" target="_blank" rel="noopener">div</a>的样式<br>display用于设置某标签的显示状态，取值有三种：<br>1）none：表示不显示，即隐藏<br>2）block：表示以块状标签显示，即该标签独占一行，前后各有一个换行符<br>3）inline：表示以行级标签显示，即该标签与其他标签同处一样</p>
-<p>2.<strong>line-height和height的区别</strong></p>
-<p><a href="https://www.baidu.com/s?wd=line-height&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao" target="_blank" rel="noopener">line-height</a>是行高的意思，height则是定义元素自身的高度。</p>
-<p>例如下面这段代码<br>&lt; div class=”test”&gt;文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字&lt; /div&gt;</p>
-<p>如果我们定义.test {<a href="https://www.baidu.com/s?wd=line-height&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao" target="_blank" rel="noopener">line-height</a>:20px;}，那么这个元素的实际高度将取决于其中内容的多少，假如文字部分在浏览器里面显示为一行，那么这个div的实际高度就是20px，如果文字显示为两行，那么div的实际高度就是40px，而且文字的行高是20px的；</p>
-<p>3.<strong>align-items元素</strong></p>
-<p>align-items (适用于父类容器上)，设置或检索弹性盒子元素在侧轴（纵轴）方向上的对齐方式。</p>
-<p>语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">align-items: flex-start | flex-end | center | baseline | stretch</span><br></pre></td></tr></table></figure>
-
+<h2 id="需求背景"><a href="#需求背景" class="headerlink" title="需求背景"></a>需求背景</h2><p>项目主流程缓存优化，主流程页面（组件）切换时保持之前加载的状态，避免反复渲染影响页面性能，同时也可以很大程度上减少接口请求，减小服务器压力。</p>
+<h2 id="用法："><a href="#用法：" class="headerlink" title="用法："></a>用法：</h2><p>&lt; keep-alive&gt;包裹两个组件：组件A和组件B。当第一次切换到组件A时，组件A的created和activated生命周期函数都会被执行，这时通过点击事件改变组件A的文字的颜色，在切换到组件B，这时组件A的deactivated的生命周期函数会被触发；在切换回组件A，组件A的activated生命周期函数会被触发，但是它的created生命周期函数不会被触发了，而且A组件的文字颜色也是我们之前设置过的。</p>
+<p>1、在created钩子中可以对data数据进行操作，这个时候可以进行ajax请求将返回的数据赋给data</p>
+<p>2、在mounted钩子对挂载的dom进行操作</p>
+<p>3、在使用vue-router时有时需要使用<keep-alive></keep-alive>来缓存组件状态，这个时候created钩子就不会被重复调用了，如果我们的子组件需要在每次加载的时候进行某些操作，可以使用activated钩子触发。</p>
+<p>keepalive 可以接收3个属性做为参数进行匹配对应的组件进行缓存:</p>
 <ul>
-<li>flex-start：弹性盒子元素的侧轴（纵轴）起始位置的边界紧靠住该行的侧轴（纵轴）起始边界。</li>
-<li>flex-end：弹性盒子元素的侧轴（纵轴）结束位置的边界紧靠住该行的侧轴（纵轴）结束边界。</li>
-<li>center：弹性盒子元素在该行的侧轴（纵轴）上居中放置。（如果该行的尺寸小于弹性盒子元素的尺寸，则会向两个方向溢出相同的长度）。</li>
-<li>baseline：如弹性盒子元素的行内轴与侧轴为同一条，则该值与’flex-start’等效。其它情况下，该值将参与基线对齐。</li>
-<li>stretch：如果指定侧轴大小的属性值为’auto’，则其值会使项目的边距盒的尺寸尽可能接近所在行的尺寸，但同时会遵照’min/max-width/height’属性的限制。</li>
+<li><p>include 包含的组件(可以为字符串，数组，以及正则表达式,只有匹配的组件会被缓存)</p>
+</li>
+<li><p>exclude 排除的组件(以为字符串，数组，以及正则表达式,任何匹配的组件都不会被缓存)</p>
+</li>
+<li><p>max 缓存组件的最大值(类型为字符或者数字,可以控制缓存组件的个数) </p>
+<p><strong>如果只想要router-view里面的某个组件被缓存，可以考虑使用meta属性</strong></p>
+</li>
 </ul>
-<p><a href="http://caibaojian.com/demo/flexbox/align-items.html" target="_blank" rel="noopener">参考</a></p>
-<p>4.<strong>CSS3 @keyframes 规则</strong></p>
-<p><a href="https://www.w3school.com.cn/cssref/pr_keyframes.asp" target="_blank" rel="noopener">参考</a></p>
-<p>使 div 元素匀速向下移动</p>
-<p>5.<strong>cursor: pointer;</strong></p>
-<p><a href="https://www.w3school.com.cn/cssref/pr_class_cursor.asp" target="_blank" rel="noopener">参考</a></p>
-<p>cursor 属性规定要显示的光标的类型（形状），该属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状。</p>
-<p>pointer：光标呈现为指示链接的指针（一只手）</p>
-<p>### </p>
-<hr>
-<h3 id="js"><a href="#js" class="headerlink" title=".js"></a>.js</h3><ol>
-<li><strong>document.getElementById(id);</strong></li>
-</ol>
-<p>getElementById() 方法可返回对拥有指定 ID 的第一个对象的引用。<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document" target="_blank" rel="noopener"><code>Document</code></a>的方法 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/getElementById" target="_blank" rel="noopener"><code>getElementById()</code></a>返回一个匹配特定 <a href="https://developer.mozilla.org/en-US/docs/DOM/element.id" target="_blank" rel="noopener">ID</a>的元素. 由于元素的 ID 在大部分情况下要求是独一无二的，这个方法自然而然地成为了一个高效查找特定元素的方法。</p>
-<p>如果需要查找到那些没有ID 的元素，你可以考虑通过CSS选择器使用 <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/querySelector" target="_blank" rel="noopener"><code>querySelector()</code></a>。</p>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/getElementById" target="_blank" rel="noopener">参考</a></p>
-<ol start="2">
-<li><p><strong>document.addEventListener（）</strong></p>
-<p>addEventListener() 方法用于向指定元素添加事件句柄。</p>
-<p>  <strong>提示：</strong> 使用 <a href="https://www.runoob.com/jsref/met-element-removeeventlistener.html" target="_blank" rel="noopener">removeEventListener()</a> 方法来移除 addEventListener() 方法添加的事件句柄。</p>
-<p><a href="https://www.runoob.com/jsref/met-element-addeventlistener.html" target="_blank" rel="noopener">参考</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;keep-alive&gt;</span><br><span class="line">  &lt;router-view v-if=&quot;$route.meta.keepAlive&quot;&gt;&lt;/router-view&gt;</span><br><span class="line">&lt;/keep-alive&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="keep-alive生命周期钩子函数：activated、deactivated"><a href="#keep-alive生命周期钩子函数：activated、deactivated" class="headerlink" title="keep-alive生命周期钩子函数：activated、deactivated"></a>keep-alive生命周期钩子函数：activated、deactivated</h2><p>生命周期函数：就是vue在某个时间段会自动执行的函数</p>
+<ul>
+<li>beforeCreate(){}在执行的时候，data还有methods都没有被初始化</li>
+<li>created(){} data还有methods都被初始化好了，如果要调用 methods 方法或者操作 data 里面的数据，最早只能在 created 里面进行操作。</li>
+<li>beforeMount(){} 表示模板已经在内存中编辑完成了，但是尚未渲染到模板页面中。即页面中的元素，没有被真正的替换过来，只是之前写的一些模板字符串。</li>
+<li>mounted(){} 表示内存中模板已经真实的挂载到页面中去了，用户可以看到渲染好的界面了</li>
+</ul>
+<p>注意这是一个生命周期函数的最后一个函数了，执行完这个函数表示 整个vue实例已经初始化完成了，组件脱离了创建阶段，进入运行阶段。</p>
+<p>下面是运行期间的两个生命周期函数的钩子：</p>
+<ul>
+<li><p>beforeUpdate(){} 表示我们的界面还没更新，但是data里面的数据是最新的。即页面尚未和最新的data里面的数据保持同步。</p>
 </li>
-<li><p><strong>innerHTML修改元素内容</strong></p>
+<li><p>update(){} 表示页面和data里面的数据已经同步了，都是最新的。</p>
 </li>
-</ol>
-<hr>
-<h3 id="js思路"><a href="#js思路" class="headerlink" title="js思路:"></a>js思路:</h3><p>初始化两层循环建立一个4*4的数组，初始化为空数组，然后调用someNextNum函数两次获取两个随机数；</p>
-<p>然后调用resetFlex函数刷新视图模块，用getElementById()函数引用css中的对象，双重循环遍历二维数组改变每个位置的innerHTML和className值，然后找到id为score的元素innerHTML修改分数值；以上每次循环都要做一次，然后还要判断一下游戏状态标志位state，如果游戏结束则将id等于gameover的标签的。style.display属性设为block，并且将id为final元素的innerHTML设置为显示最终得分，将原来container的显示设置为none；否则gameover的display属性设置为none。</p>
-<p>一般先运行一次resetFlex渲染页面；</p>
-<p>监听键盘事件：绑定addEventListener（‘keydown’，function）事件，判断按键是上/下/左/右，对应不同的操作函数，操作函数内部如果是横向（左右）就对每一行循环，查找下一个带值的块，如果当前块等于0就把下一个带值的块赋给当前块并且将带值块清零；如果当前块和下一个带值的块相等，则数字×2付给当前块，把带值块清空，并且把值加到总分里。向右就从最大往0循环判断。</p>
-<p>监听鼠标滑动效果mousedown事件；</p>
-<p>注意：操作函数内部有move函数，这个函数里有个callback回调函数，作用是在move（callback）函数内部某个位置调用callback();可以去执行move(a函数)里的a函数，执行完在回到callback();调用的下一行继续执行。</p>
-<p>!!鼠标滑动模块没看明白（Logic）</p>
-<hr>
-<h3 id="小技巧："><a href="#小技巧：" class="headerlink" title="小技巧："></a>小技巧：</h3><p>1.关于如何在块级元素中让文字水平和垂直都居中</p>
-<p>水平居中可以用text-align: center;</p>
-<p>垂直居中<strong>不</strong>可以用vertical-align: middle;至于这个属性干嘛用的可以百度一下。</p>
-<p>一个小技巧就是可以设置<strong>line-height=height</strong>，元素的高度等于行高，如果文字有两行可以设置line-height=二分之一height;</p>
-<p><a href="https://www.cnblogs.com/huchong/p/7875127.html" target="_blank" rel="noopener">参考</a></p>
+<li><p>beforeDestory(){} 当执行这个生命周期钩子的时候，vue的实例从运行阶段进入销毁阶段，此时实例的data 还有 methods处于可用的状态。</p>
+</li>
+<li><p>Destoryed(){} 表示组件已经完全被销毁了，组件中所有的实例方法都是不能用了</p>
+</li>
+</ul>
 
       
 
@@ -332,15 +299,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">项目</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">实习，vue</a>
         		</li>
       		
 		</ul>
@@ -396,7 +355,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/02/项目“2048小游戏”/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/22/实习记录-activated钩子和-keep-alive/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -410,18 +369,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/04/Javascript错题记录-from-GitHub/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Javascript错题记录(from GitHub)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/08/29/React基础概念/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">React基础概念</div>
+    <a href="/2020/02/22/实习记录-事件代理-委托机制、冒泡与捕获/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">实习记录--事件代理/委托机制、冒泡与捕获</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -448,7 +398,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#读2048小游戏程序记录"><span class="toc-number">1.</span> <span class="toc-text">读2048小游戏程序记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#html"><span class="toc-number">1.1.</span> <span class="toc-text">.html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS"><span class="toc-number">1.2.</span> <span class="toc-text">.CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js"><span class="toc-number">1.3.</span> <span class="toc-text">.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js思路"><span class="toc-number">1.4.</span> <span class="toc-text">js思路:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#小技巧："><span class="toc-number">1.5.</span> <span class="toc-text">小技巧：</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#需求背景"><span class="toc-number">1.</span> <span class="toc-text">需求背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用法："><span class="toc-number">2.</span> <span class="toc-text">用法：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#keep-alive生命周期钩子函数：activated、deactivated"><span class="toc-number">3.</span> <span class="toc-text">keep-alive生命周期钩子函数：activated、deactivated</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -465,8 +415,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://yoursite.com/2019/09/02/项目“2048小游戏”/", 
-    sourceId: "项目“2048小游戏”",
+    url: "http://yoursite.com/2020/02/22/实习记录-activated钩子和-keep-alive/", 
+    sourceId: "实习记录-activated钩子和-keep-alive",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
